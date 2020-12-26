@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
+        android:fontFamily="@font/font"
         android:layout_marginTop="@dimen/dp10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/txt_email_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,6 +29,7 @@
             android:text="OTP Send to Email or Phone"/>
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/changenumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,6 +39,7 @@
 
     </RelativeLayout>
     <EditText
+        android:fontFamily="@font/font"
         android:backgroundTint="@color/pinkcolor"
         android:layout_marginTop="@dimen/dp10"
         android:id="@+id/otppassword"
@@ -48,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView
+        android:fontFamily="@font/font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
@@ -55,6 +60,7 @@
         android:layout_gravity="center"/>
 
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/resendotp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

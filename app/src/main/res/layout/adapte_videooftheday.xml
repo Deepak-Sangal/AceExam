@@ -46,6 +46,7 @@
                     android:layout_alignParentEnd="true"/>
             </RelativeLayout>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/videonameeeeee"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp"

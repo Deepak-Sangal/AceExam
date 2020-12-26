@@ -7,6 +7,7 @@
     android:layout_marginVertical="@dimen/_5sdp"
     android:layout_height="wrap_content">
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/txt_state"
         android:padding="5dp"
         android:layout_width="match_parent"

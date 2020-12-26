@@ -7,6 +7,7 @@
     android:padding="@dimen/_3sdp"
     android:layout_height="wrap_content">
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/describtion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/nameeeeeeeee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

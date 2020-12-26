@@ -17,6 +17,7 @@
         android:background="@null" />
 
     <TextView
+        android:fontFamily="@font/font"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"

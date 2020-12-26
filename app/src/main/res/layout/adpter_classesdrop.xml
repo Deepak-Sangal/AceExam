@@ -6,6 +6,7 @@
     android:orientation="vertical">
 
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/des"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
@@ -34,12 +35,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:fontFamily="@font/font"
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dr. Rajiraj Anatomy"
                 android:textColor="@color/black"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/title"
                 android:textColor="@color/common"
                 android:layout_width="wrap_content"

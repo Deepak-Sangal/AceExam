@@ -25,6 +25,7 @@
         android:layout_marginTop="10.0dip">
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/examname"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
@@ -33,6 +34,7 @@
             android:textSize="15.0sp"/>
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/questioncount"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
@@ -42,6 +44,7 @@
             android:textSize="12.0sp" />
 
         <TextView
+            android:fontFamily="@font/font"
             android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"

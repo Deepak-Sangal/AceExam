@@ -32,6 +32,7 @@
             android:layout_centerInParent="true"/>
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/viewplans"
             android:visibility="gone"
             android:layout_width="wrap_content"
@@ -60,6 +61,7 @@
             android:layout_centerInParent="true"
             android:src="@drawable/iconawesome" />
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/text"
             android:layout_marginTop="@dimen/dp10"
             android:textColor="@color/black"
@@ -96,6 +98,7 @@
                 android:layout_height="20dp"
                 android:src="@drawable/star"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:layout_marginLeft="@dimen/sp15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -144,6 +147,7 @@
                             android:layout_height="@dimen/_30sdp"
                             android:src="@drawable/bookmarkcommon"/>
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="wrap_content"
                             android:text="Bookmark"
@@ -163,6 +167,7 @@
                             android:layout_height="@dimen/_30sdp"
                             android:src="@drawable/ic_image_slides"/>
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="wrap_content"
                             android:text="Slides"
@@ -183,6 +188,7 @@
                             android:layout_height="@dimen/_30sdp"
                             android:src="@drawable/correct"/>
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="wrap_content"
                             android:text="Complete"
@@ -202,6 +208,7 @@
                             android:layout_height="@dimen/_30sdp"
                             android:src="@drawable/ic_book"/>
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="wrap_content"
                             android:text="Notes"
@@ -235,6 +242,7 @@
             android:layout_height="20dp"
             android:src="@drawable/star"/>
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/ratingvalue"
             android:layout_marginLeft="@dimen/sp15"
             android:layout_width="wrap_content"
@@ -242,6 +250,7 @@
             android:text="3.15"
             android:textColor="@color/common"/>
         <TextView
+            android:fontFamily="@font/font"
             android:layout_marginLeft="@dimen/sp15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -275,11 +284,13 @@
             android:layout_weight="0.8"
             android:layout_marginLeft="@dimen/sp15">
             <TextView
+                android:fontFamily="@font/font"
                 android:textColor="@color/blacktext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dr. Pankaj Sharma"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:layout_marginTop="2dp"
                 android:textColor="@color/common"
                 android:layout_width="wrap_content"
@@ -292,6 +303,7 @@
                 android:layout_height="1dp"
                 android:background="@color/common"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/videodescribe"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/blacktext"
@@ -302,6 +314,7 @@
                 android:text="Lorem ipsum dolor sit amet, consetetur
 sadipscing elitr, sed diam nonumy eirmod"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/seemore"
                 android:visibility="visible"
                 android:layout_marginBottom="@dimen/dp10"
@@ -317,6 +330,7 @@ sadipscing elitr, sed diam nonumy eirmod"/>
 
     </LinearLayout>
     <TextView
+        android:fontFamily="@font/font"
         android:layout_marginTop="@dimen/dp15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -361,6 +375,7 @@ sadipscing elitr, sed diam nonumy eirmod"/>
     </HorizontalScrollView>
 
     <TextView
+        android:fontFamily="@font/font"
         android:layout_marginTop="@dimen/dp15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -409,6 +424,7 @@ sadipscing elitr, sed diam nonumy eirmod"/>
         android:layout_height="wrap_content">
 
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/tv_complete"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"

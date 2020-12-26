@@ -25,6 +25,7 @@
                     app:civ_border_width="2dp"
                     app:civ_border_color="#FF000000"/>
                 <TextView
+                    android:fontFamily="@font/font"
                     android:id="@+id/faculty_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -36,6 +37,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font"
                     android:id="@+id/faculty_post"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -46,6 +48,7 @@
                     android:textColor="@color/blue_00ade6"
                     android:textSize="@dimen/dimen_15sp" />
                 <TextView
+                    android:fontFamily="@font/font"
                     android:id="@+id/faculty_department"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,6 +74,7 @@
                     android:layout_marginLeft="@dimen/dimen_10dp"
                     android:src="@drawable/quotes"/>
                 <TextView
+                    android:fontFamily="@font/font"
                     android:id="@+id/faculty_quotes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

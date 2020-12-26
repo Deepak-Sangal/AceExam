@@ -26,6 +26,7 @@
         android:layout_marginTop="10.0dip">
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/qbankname"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
@@ -34,6 +35,7 @@
             android:textSize="15.0sp"/>
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/textcomplete"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"

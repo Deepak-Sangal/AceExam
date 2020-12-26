@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/namecourse"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
@@ -28,6 +29,7 @@
             android:orientation="horizontal">
 
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/count"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
             android:layout_height="15.0dip"
             android:src="@drawable/redbookmark"/>
         <TextView
+            android:fontFamily="@font/font"
             android:visibility="gone"
             android:id="@+id/bookmarkcount"
             android:layout_marginStart="@dimen/dp5"

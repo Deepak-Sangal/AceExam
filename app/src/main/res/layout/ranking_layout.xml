@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/tv_count"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="wrap_content"
@@ -39,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
+                    android:fontFamily="@font/font"
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,12 +60,14 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
+                            android:fontFamily="@font/font"
                             android:id="@+id/tv_correct"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="285"
                             android:textColor="@color/green"/>
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Correct"
@@ -76,12 +80,14 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
+                            android:fontFamily="@font/font"
                             android:id="@+id/wrong"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="15"
                             android:textColor="@color/redcolor"/>
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="wrong"
@@ -94,12 +100,14 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
+                            android:fontFamily="@font/font"
                             android:id="@+id/skipped"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="285"
                           />
                         <TextView
+                            android:fontFamily="@font/font"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Skipped"

@@ -19,6 +19,7 @@
 
             android:orientation="vertical">
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/question"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
@@ -26,18 +27,21 @@
                 android:text="Cptital of india"
                 android:textSize="@dimen/_15sdp"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/uranswer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cptital of india"
                 android:textSize="@dimen/_12sdp"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/correct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Correct Answer:"
                 android:textSize="@dimen/_12sdp"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/expalin"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"

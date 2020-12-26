@@ -22,6 +22,7 @@
                 android:src="@drawable/ic_play_arrow_24"/>
 
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/time"
             android:layout_gravity="center"
                 android:textSize="@dimen/dp15"
@@ -31,6 +32,7 @@
                 android:textColor="@color/common"/>
         </LinearLayout>
         <TextView
+            android:fontFamily="@font/font"
             android:id="@+id/titlename"
             android:layout_marginStart="17dp"
             android:layout_width="wrap_content"

@@ -12,7 +12,8 @@
 
 
         <TextView
-          android:layout_marginStart="@dimen/dp20"
+            android:fontFamily="@font/font"
+            android:layout_marginStart="@dimen/dp20"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Question Bank"
@@ -70,6 +71,7 @@
                                 android:layout_marginTop="10.0dip">
 
                                 <TextView
+                                    android:fontFamily="@font/font"
                                     android:layout_height="wrap_content"
                                     android:layout_width="fill_parent"
                                     android:text="Start Custom Module"
@@ -77,6 +79,7 @@
                                     android:textSize="15.0sp"/>
 
                                 <TextView
+                                    android:fontFamily="@font/font"
                                     android:layout_height="wrap_content"
                                     android:layout_width="fill_parent"
                                     android:text="Customized MCQ test and exams"
@@ -109,6 +112,7 @@
                                 android:layout_marginTop="10.0dip">
 
                                 <TextView
+                                    android:fontFamily="@font/font"
                                     android:layout_height="wrap_content"
                                     android:layout_width="fill_parent"
                                     android:text="Start Custom Module"
@@ -116,6 +120,7 @@
                                     android:textSize="15.0sp"/>
 
                                 <TextView
+                                    android:fontFamily="@font/font"
                                     android:layout_height="wrap_content"
                                     android:layout_width="fill_parent"
                                     android:text="Customized MCQ test and exams"

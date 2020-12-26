@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_10sdp">
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/txt_count"
         android:text="1"
         android:textColor="@color/black"
@@ -15,6 +16,7 @@
 
     </TextView>
     <TextView
+        android:fontFamily="@font/font"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_toRightOf="@+id/txt_count"
         android:id="@+id/subj_question"
@@ -25,6 +27,7 @@
         android:textSize="@dimen/dimen_15sp"
        />
     <TextView
+        android:fontFamily="@font/font"
         android:visibility="gone"
         android:id="@+id/subj_name"
         android:layout_width="match_parent"

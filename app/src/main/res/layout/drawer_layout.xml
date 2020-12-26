@@ -25,6 +25,7 @@
                 android:paddingRight="10dp"
                 />
             <TextView
+                android:fontFamily="@font/font"
                 android:layout_toRightOf="@id/drawer_image"
                 android:id="@+id/textViewName"
                 android:textSize="@dimen/_13sdp"

@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:fontFamily="@font/font"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20.0dip"
@@ -40,6 +41,7 @@
                 android:src="@drawable/searchgrey" />
 
             <TextView
+                android:fontFamily="@font/font"
                 android:layout_width="100.0dip"
                 android:layout_height="fill_parent"
                 android:gravity="center"
@@ -69,6 +71,7 @@
 
 
             <TextView
+                android:fontFamily="@font/font"
                 android:layout_width="100.0dip"
                 android:layout_height="30.0dip"
                 android:layout_marginLeft="@dimen/dp15"

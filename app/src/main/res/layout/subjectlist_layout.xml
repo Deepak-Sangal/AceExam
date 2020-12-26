@@ -29,6 +29,7 @@
         </ImageView>
 
         <TextView
+            android:fontFamily="@font/font"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_toRightOf="@+id/img_umchecked"
             android:textColor="@color/black"
@@ -42,6 +43,7 @@
         </TextView>
 
         <TextView
+            android:fontFamily="@font/font"
             android:layout_alignParentRight="true"
             android:textColor="@color/common"
             android:textSize="@dimen/_13sdp"

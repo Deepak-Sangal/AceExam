@@ -5,6 +5,7 @@
     android:orientation="vertical">
 
     <TextView
+        android:fontFamily="@font/font"
         android:id="@+id/nameeeee"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -29,6 +30,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="@font/font"
                 android:id="@+id/topiccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,6 +48,7 @@
                 android:src="@drawable/redbookmark" />
 
             <TextView
+                android:fontFamily="@font/font"
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,6 +65,7 @@
                 android:src="@drawable/star" />
 
             <TextView
+                android:fontFamily="@font/font"
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,6 +82,7 @@
                 android:src="@drawable/redbookmark" />
 
             <TextView
+                android:fontFamily="@font/font"
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

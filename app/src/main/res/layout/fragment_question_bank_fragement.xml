@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questiobank.QuestionBankFragement">
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+          android:layout_marginStart="@dimen/dp20"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Question Bank"
+            android:textColor="@color/common"
+            android:textStyle="bold"
+            android:textSize="@dimen/dp30"/>
+
+
+
+        <ScrollView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_margin="10.0dip">
+
+                <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/corners">
+
+
+
+                    <LinearLayout
+                        android:layout_height="160.0dip"
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/dp15">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/customtest"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_height="60.0dip"
+                                android:layout_width="60.0dip"
+                                android:layout_margin="10.0dip"
+                                android:src="@drawable/custom"/>
+
+
+
+                            <LinearLayout
+                                android:layout_height="60.0dip"
+                                android:layout_width="250.0dip"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10.0dip">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="fill_parent"
+                                    android:text="Start Custom Module"
+                                    android:textColor="@color/black"
+                                    android:textSize="15.0sp"/>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="fill_parent"
+                                    android:text="Customized MCQ test and exams"
+                                    android:textColor="#ff3a3a3a"
+                                    android:textSize="12.0sp"
+                                    android:layout_marginTop="10.0dip"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_height="60.0dip"
+                                android:layout_width="60.0dip"
+                                android:layout_margin="10.0dip"
+                                android:src="@drawable/history"/>
+
+
+
+                            <LinearLayout
+                                android:layout_height="60.0dip"
+                                android:layout_width="250.0dip"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10.0dip">
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="fill_parent"
+                                    android:text="Start Custom Module"
+                                    android:textColor="@color/black"
+                                    android:textSize="15.0sp"/>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="fill_parent"
+                                    android:text="Customized MCQ test and exams"
+                                    android:textColor="#ff3a3a3a"
+                                    android:textSize="12.0sp"
+                                    android:layout_marginTop="10.0dip"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dp15">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/questionbankrecycle"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

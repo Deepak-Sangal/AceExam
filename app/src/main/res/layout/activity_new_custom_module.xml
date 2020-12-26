@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".questiobank.NewCustomModule">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/pinkcolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+            <ImageView
+                android:id="@+id/back_subject"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrowback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <TextView
+                android:fontFamily="@font/nunitofont"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:text="New custom module"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rel_exam_mode"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_exam"
+                    android:src="@drawable/ic_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_exam"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Exam Mode"
+                    android:id="@+id/txt_exam_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_toRightOf="@+id/img_exam"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_below="@+id/txt_exam_mode"
+                    android:text="Review answer only after completing the module"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rlv_regular_mode"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_regular"
+                    android:src="@drawable/ic_unchecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Regular"
+                    android:id="@+id/txt_exam_regualr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_toRightOf="@+id/img_regular"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_below="@+id/txt_exam_regualr"
+                    android:text="See answer and explanation after solving each MCQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:id="@+id/lnr_bootom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="@dimen/_13sdp"
+            android:layout_weight="5"
+            android:textColor="@color/white"
+            android:text="Previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bnt_next_test"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="5"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

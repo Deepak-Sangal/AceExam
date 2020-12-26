@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/_15sdp"
+    android:padding="@dimen/dp20"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:text="One Last step"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:src="@drawable/call"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please link your phone number"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp20"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is to secure your account and help in future logins"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/dp15"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp" />
+            <View
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="1dp"
+                android:background="@color/common"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="XXXXXXXXXX"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+               />
+            <View
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/getotp"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Get OTP"
+        android:paddingVertical="@dimen/dp10"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/white"
+        android:paddingHorizontal="@dimen/dp50"
+        android:layout_gravity="center"
+        android:background="@color/common"/>
+
+</LinearLayout>

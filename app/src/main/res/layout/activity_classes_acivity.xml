@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common">
+
+        <ImageView
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/backbutton"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrowback"/>
+
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:visibility="gone"
+            android:id="@+id/titleb"
+            android:layout_toStartOf="@+id/settingbtn"
+            android:layout_toEndOf="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Bones, Joints and Cartilages and somet... Dr. Raviraj Antony"
+            android:textColor="@color/whitetext"
+            android:textSize="@dimen/dp15"
+            android:layout_toRightOf="@+id/backbutton" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/settingbtn"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@drawable/bookmarkb"
+            tools:ignore="OnClick" />
+
+    </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/describtion"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facial Nerver"
+        android:textStyle="bold"
+        android:textColor="@color/blacktext"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_marginLeft="@dimen/sp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.15"
+            android:textColor="@color/common"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_marginLeft="@dimen/sp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.15k View"
+            android:textColor="@color/common"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_marginStart="@dimen/sp15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sp15">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cincircle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/sp15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="@dimen/sp15">
+            <TextView
+                android:fontFamily="@font/font"
+                android:textColor="@color/blacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Pankaj Sharma"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MD. Amtory"/>
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/tv_des"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:text="Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:layout_marginRight="@dimen/sp15"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="end"
+                android:textColor="@color/common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="see more .."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<TextView
+    android:fontFamily="@font/font"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_marginStart="@dimen/sp15"
+    android:textSize="20dp"
+    android:textColor="@color/blacktext"
+    android:textStyle="bold"
+    android:text="Video"
+    android:layout_marginLeft="@dimen/sp15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclevideo"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="@dimen/sp15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/sp15">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/download"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp15"
+            android:textStyle="bold"
+            android:textColor="@color/blacktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sp15"
+            android:layout_marginLeft="@dimen/sp15"
+            android:text="Download Video Offline"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

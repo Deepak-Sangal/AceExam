@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:id="@+id/clickexam"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/coin"
+        android:layout_margin="10.0dip"/>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="250.0dip"
+        android:orientation="vertical"
+        android:layout_marginTop="10.0dip">
+
+        <TextView
+            android:id="@+id/examname"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Community Medicine"
+            android:textColor="#ff3a3a3a"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/questioncount"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Expired on 4 october 2012"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@color/common"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="300 Question / 210 minutes"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@color/common"
+            android:textSize="12.0sp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greytext"
+        android:layout_marginLeft="10dp"
+        />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CollageNameSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@color/pinkcolor">
+
+            <ImageView
+                android:id="@+id/backbutton_collage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp10"
+                android:src="@drawable/arrowback">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:text="Which college did you go to?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18">
+
+        </TextView>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:text="@string/note"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="@dimen/dp20"
+            android:background="@color/Gainsboro"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/font"                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="Which collage did you go to?"
+                android:textColor="@color/black"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:padding="@dimen/dp5">
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:id="@+id/collegenameq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:text="abcd college, greater noida"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/iamgeddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_arrow_forward">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/pinkcolor">
+
+            </View>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/txt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp30"
+        android:padding="@dimen/dp10"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17">
+
+    </Button>
+
+</RelativeLayout>

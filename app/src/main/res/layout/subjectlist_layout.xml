@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/rel_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_checked"
+            android:src="@drawable/ic_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_umchecked"
+            android:layout_toRightOf="@+id/img_checked"
+            android:src="@drawable/ic_circle_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img_umchecked"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_subject_name"
+            android:text="Subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:textColor="@color/common"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_topic"
+            android:text="All Topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_below="@+id/rel_one"
+        android:background="@color/grayColor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+</RelativeLayout>

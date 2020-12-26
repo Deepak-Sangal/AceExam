@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CourseSelectionActivity">
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/pinkcolor">
+
+        <ImageView
+            android:id="@+id/selectionback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/arrowback">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="Please select your exam"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@+id/cnf"-->
+    <!--        android:layout_below="@+id/tool"-->
+    <!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lnr_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginLeft="@dimen/dp20"-->
+    <!--        android:layout_marginRight="@dimen/dp20"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/neet"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginRight="@dimen/dp5"-->
+    <!--            android:layout_weight="5"-->
+    <!--            android:background="@drawable/pink_border"-->
+    <!--            android:padding="@dimen/dp15"-->
+    <!--            android:text="NEET PG"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/pinkcolor"-->
+    <!--            android:textSize="@dimen/sp17">-->
+
+    <!--        </TextView>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/fmge"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/dp5"-->
+    <!--            android:layout_weight="5"-->
+    <!--            android:background="@drawable/pink_border"-->
+    <!--            android:padding="@dimen/dp15"-->
+    <!--            android:text="FMGE"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/pinkcolor"-->
+    <!--            android:textSize="@dimen/sp17">-->
+
+    <!--        </TextView>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_course"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/lnr_layout"-->
+    <!--        android:layout_marginLeft="@dimen/dp20"-->
+    <!--        android:layout_marginTop="@dimen/dp30"-->
+    <!--        android:layout_marginRight="@dimen/dp20"-->
+    <!--        android:background="@drawable/pink_border"-->
+    <!--        android:padding="@dimen/dp13"-->
+    <!--        android:text="All India Entrance"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="@dimen/sp17">-->
+
+    <!--    </Button>-->
+
+
+    <RadioGroup
+        android:id="@+id/radGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cnf"
+        android:layout_below="@+id/title"
+        android:checkedButton="@id/fmge"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RadioButton
+            android:fontFamily="@font/font"
+            android:id="@+id/fmge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp20"
+            android:text="FMGE"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:fontFamily="@font/font"
+            android:id="@+id/neet_pg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp20"
+            android:text="NEET-PG"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:fontFamily="@font/font"
+            android:id="@+id/allIndia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp20"
+            android:text="All India Entrance Exam"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:fontFamily="@font/font"
+            android:id="@+id/iit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp20"
+            android:text="IIT Basic"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cnf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Confirm"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

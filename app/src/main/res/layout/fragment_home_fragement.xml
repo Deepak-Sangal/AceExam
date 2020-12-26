@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeFragement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="56.0dip"
+            android:background="@color/pinkcolor">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="84.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="10dp"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="25.0sp" />
+
+            <ImageView
+                android:id="@+id/settingbtn"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@drawable/settingbtn"
+                tools:ignore="OnClick" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pinkcolor"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp15"
+                    android:orientation="horizontal"
+                    android:weightSum="6.0">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_user"
+                        android:layout_height="100.0dip"
+                        android:layout_width="100.0dip"
+                        android:src="@drawable/profile"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.0"
+                        android:background="@color/common"
+                        android:orientation="vertical"
+                        android:weightSum="4.0">
+
+
+                        <TextView
+                            android:id="@+id/txt_home"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20.0dip"
+                            android:text=""
+                            android:textColor="#fffaf6f6"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20.0dip"
+                            android:text=""
+                            android:textColor="@color/whitetext"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/txt_mobile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20.0dip"
+                            android:text=""
+                            android:textColor="@color/whitetext"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:id="@+id/bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                       >
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img_book_mark"
+                            android:layout_width="36.0dip"
+                            android:layout_height="36.0dip"
+                            android:layout_marginTop="13.0dip"
+                            android:background="@drawable/ring"
+                            android:paddingLeft="11dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="7dp"
+                            android:src="@drawable/bookmarkb" />
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_below="@+id/img_book_mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34.0dip"
+                            android:background="@color/common"
+                            android:text="Bookmarks"
+                            android:textColor="@color/whitetext"
+                            android:textSize="@dimen/_11sdp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlvr_help"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img_help"
+                            android:layout_width="36.0dip"
+                            android:layout_height="36.0dip"
+                            android:layout_marginTop="13.0dip"
+                            android:background="@drawable/ring"
+                            android:padding="5dp"
+                            android:src="@drawable/helph" />
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@color/common"
+                            android:gravity="center_horizontal"
+                            android:text="Help"
+                            android:textColor="@color/whitetext"
+                            android:textSize="@dimen/_11sdp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:id="@+id/search_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img_search"
+                            android:layout_width="36.0dip"
+                            android:layout_height="36.0dip"
+                            android:layout_marginTop="13.0dip"
+                            android:background="@drawable/ring"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_search_24" />
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_below="@+id/img_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@color/common"
+                            android:gravity="center_horizontal"
+                            android:text="Search"
+                            android:textColor="@color/whitetext"
+                            android:textSize="@dimen/_11sdp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp15"
+                        android:text="Progress/History"
+                        android:textColor="#fff8f2f2"
+                        android:textSize="@dimen/sp15"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150.0dip"
+                        android:background="@color/common"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+
+                        <LinearLayout
+                            android:id="@+id/lnr_progress"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="@dimen/dp15"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/corners"
+                            android:backgroundTint="@color/whitetext"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/weeklypercentage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="0 %"
+                                android:textColor="@color/blacktext"
+                                android:textSize="25.0sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/dp15"
+                                android:paddingTop="@dimen/dp15"
+                                android:text="Progress on module"
+                                android:textColor="@color/blacktext"
+                                android:textSize="10.0sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="this week"
+                                android:textColor="@color/blacktext"
+                                android:textSize="10.0sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="@dimen/dp15"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/corners"
+                            android:backgroundTint="@color/whitetext"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/montlypercentage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="0 %"
+                                android:textColor="@color/blacktext"
+                                android:textSize="25.0sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/dp15"
+                                android:paddingTop="@dimen/dp15"
+                                android:text="More Chapters"
+                                android:textColor="@color/blacktext"
+                                android:textSize="12.0sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="covers than last mo.."
+                                android:textColor="#ff3a3a3a"
+                                android:textSize="12.0sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/corners"
+                    android:backgroundTint="@color/whitetext"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/sp15"
+                        android:text="Recommended"
+                        android:textColor="#615F5F"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/quickquestion"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="Quick Question"
+                        android:textColor="@color/common"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/mcqoftheday"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/greyborder"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="@dimen/sp15"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                            android:textColor="@color/blacktext"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/firliner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/greyborder"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/optiona"
+                                android:layout_width="wrap_content"
+                                android:layout_height="51dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Arteries always"
+                                android:textColor="@color/blacktext" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/greyborder"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/optionb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Arteries always carry oxigeneted blood "
+                                android:textColor="@color/blacktext" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/greyborder"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/optionc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Arteries always carry oxigeneted blood"
+                                android:textColor="@color/blacktext" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/greyborder"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/optiond"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="All of the above"
+                                android:textColor="@color/blacktext" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/greytext" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingLeft="@dimen/dp15"
+                        android:text="Exam of the day"
+                        android:textColor="@color/blacktext"
+                        android:textSize="@dimen/dp15" />
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="@dimen/dp15"
+                                android:background="@drawable/corners"
+                                android:backgroundTint="@color/common"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="AIIMS test subject"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="@dimen/dp15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="Exam name 2020"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="@dimen/dp15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="200 questions"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="200 minutes"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="10dp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="@dimen/dp15"
+                                android:background="@drawable/corners"
+                                android:backgroundTint="@color/common"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="AIIMS test subject"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="@dimen/dp15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="Exam name 2020"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="@dimen/dp15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="200 questions"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp15"
+                                    android:paddingLeft="@dimen/dp15"
+                                    android:text="200 minutes"
+                                    android:textColor="@color/whitetext"
+                                    android:textSize="10dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/greytext" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingLeft="@dimen/dp15"
+                        android:text="Class of the day"
+                        android:textColor="@color/blacktext"
+                        android:textSize="@dimen/dp15" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:orientation="horizontal">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/classoftheday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/common"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sp15"
+                        android:background="@color/common"
+                        android:gravity="center"
+                        android:text="@string/lasthome"
+                        android:textColor="@color/whitetext"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common"
+                        android:gravity="center"
+                        android:text="@string/lasthome1"
+                        android:textColor="@color/whitetext"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common"
+                        android:gravity="center"
+                        android:text="@string/lasthome2"
+                        android:textColor="@color/whitetext"
+                        android:textSize="@dimen/sp15" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

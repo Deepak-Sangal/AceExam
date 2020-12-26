@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".search.SearchActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_war"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common"
+        app:queryHint="Search"
+        app:iconifiedByDefault="false"
+        />
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Question Bank,Video,pearls"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchrecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"/>
+
+</LinearLayout>

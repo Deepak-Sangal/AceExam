@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".questiobank.SubjectListActivity">
+
+    <LinearLayout
+        android:layout_above="@+id/lnr_bootom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/pinkcolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+            <ImageView
+                android:id="@+id/back_subject"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrowback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <TextView
+                android:fontFamily="@font/nunitofont"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:text="New custom module"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Select Subject"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnr_all_subeject"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_all"
+                    android:src="@drawable/ic_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:text="All Subject"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnr_choose_subject"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_all_subject"
+                    android:src="@drawable/ic_unchecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:text="Choose Subject"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:id="@+id/lnr_bootom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="@dimen/_13sdp"
+            android:layout_weight="5"
+            android:textColor="@color/white"
+            android:text="Previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_subjct_next"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="5"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

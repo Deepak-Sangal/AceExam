@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.YearSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@color/pinkcolor">
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp10"
+                android:src="@drawable/arrowback">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:padding="@dimen/dp10"
+            android:text="@string/please_select_your_current_acedmic"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_year_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="1st Year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/grayColor">
+
+        </View>
+
+        <TextView
+            android:id="@+id/second_year_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="2nd Year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/grayColor">
+
+        </View>
+
+        <TextView
+            android:id="@+id/third_year_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="3rd Year (3rd year part 1)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/grayColor">
+
+        </View>
+
+        <TextView
+            android:id="@+id/fourth_year_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="4th year(3rd year part2 / Final Year)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/grayColor">
+
+        </View>
+
+        <TextView
+            android:id="@+id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="Doctor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/grayColor">
+
+        </View>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bnt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        android:visibility="visible">
+
+    </Button>
+
+</RelativeLayout>

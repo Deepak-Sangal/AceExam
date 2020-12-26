@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bottom_corner"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_above="@id/profile_linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-70dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:elevation="2dp"
+        android:background="@drawable/corner_image"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/profile"/>
+
+    <LinearLayout
+        android:id="@+id/profile_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:background="@drawable/corners_20dp"
+        android:orientation="vertical">
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/changepicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="change Picture"
+            android:textAllCaps="true"
+            android:textColor="#fc5068"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textSize="12sp"/>
+        <EditText
+            android:fontFamily="@font/font"
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="deepak"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textSize="12sp"/>
+        <EditText
+            android:fontFamily="@font/font"
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="deepak@zooneto.com"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE"
+            android:textSize="12sp"/>
+        <EditText
+            android:fontFamily="@font/font"
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7248661000"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COURSE"
+            android:textSize="12sp"/>
+        <EditText
+            android:fontFamily="@font/font"
+            android:id="@+id/tv_college"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medical"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR"
+            android:textSize="12sp"/>
+        <EditText
+            android:fontFamily="@font/font"
+            android:id="@+id/tv_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fourth Prof"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/txt_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:backgroundTint="#fc5068"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

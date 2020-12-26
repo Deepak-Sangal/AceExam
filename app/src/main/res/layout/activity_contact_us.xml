@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".contactus.ContactUsActivity">
+
+    <LinearLayout
+        android:id="@+id/contact_us_linear1"
+        android:background="@color/pinkcolor"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dp50">
+        <ImageView
+            android:id="@+id/contact_us_back"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:text="Contact us"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_17sp"
+            android:paddingTop="@dimen/dp15"
+            android:paddingBottom="@dimen/dp15"
+            android:layout_gravity="center_vertical"
+            android:text="Write to us if you are facing issue. We will get back to you within 24 Hours. "
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/contact_us_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp17"
+                android:padding="@dimen/dimen_10dp"
+                android:background="@drawable/edittext"
+                android:text="Select problem type : "
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/downarrow"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:layout_marginTop="@dimen/dp5">
+
+            <EditText
+                android:fontFamily="@font/font"
+                android:id="@+id/contact_us_msg"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Write your query here"
+                android:textColorHint="@color/gray_666666"
+                android:gravity="top"
+                android:padding="@dimen/dimen_10dp"
+                android:background="@drawable/edittext"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/contact_us_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:padding="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:background="@color/light_gray_a9a9a9"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="@color/white"/>
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/gray_666666"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:textColor="@color/pinkcolor"
+            android:text="Request A Callback"/>
+-->
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:textColor="@color/black"
+            android:text="We are available from Monday to Friday
+                         \n(10:00am to 6:00 pm)"
+            android:textSize="@dimen/sp15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_mail"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:text="info@acexam.com"/>
+
+        </LinearLayout>
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_call"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:text="+91-9779421738"/>
+
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+</LinearLayout>

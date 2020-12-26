@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buynow.BuyNowActivity">
+
+    <LinearLayout
+        android:background="@color/pinkcolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <ImageView
+            android:id="@+id/buy_now_back"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:text="Buy now"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

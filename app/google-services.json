@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "413232744538",
+    "project_id": "acexamnew",
+    "storage_bucket": "acexamnew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413232744538:android:feb0105431076fb0a2b063",
+        "android_client_info": {
+          "package_name": "com.acexams.aceexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413232744538-djkmurobm7iq1d731q5ukpt7egmta8kd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.acexams.aceexam",
+            "certificate_hash": "7837777df5cf702e058d08cc592ecabf96e181b8"
+          }
+        },
+        {
+          "client_id": "413232744538-9ev8djevuu8a2ql99c8r2ujtlgk1g6os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJgJSpYbYIwdsczOa6n8TXCfQauKe_Mxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413232744538-9ev8djevuu8a2ql99c8r2ujtlgk1g6os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

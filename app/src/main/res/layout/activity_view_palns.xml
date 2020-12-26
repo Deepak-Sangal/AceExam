@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ViewPalnsActivity">
+    <LinearLayout
+        android:id="@+id/hearder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/common">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+
+                <ImageView
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/backvid"
+                    android:layout_width="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_arrowback"/>
+
+                <TextView
+                    android:fontFamily="@font/nunitofont"
+                    android:visibility="visible"
+                    android:id="@+id/titleqwe"
+                    android:layout_toStartOf="@+id/settingbtn"
+                    android:layout_toEndOf="@+id/backvid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Plan"
+                    android:textColor="@color/whitetext"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_toRightOf="@+id/backbutton" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/settingbtn"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:src="@drawable/bookmarkb"
+                    tools:ignore="OnClick" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/hearder"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_180sdp">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/wallpaper"
+               android:scaleType="fitXY"/>
+       </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/planreciver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

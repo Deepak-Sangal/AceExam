@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.acexams.aceexam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AceExam"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.QuestionbankreviewActivity"></activity>
+        <activity android:name=".mcqbookmark.BookListDetailActivity" />
+        <activity android:name=".progresstracker.ProgressTrackerActivity" />
+        <activity android:name=".search.SearchActivity" />
+        <activity android:name=".questiobank.SubjectTopicActivity" />
+        <activity android:name=".mcqbookmark.SubjectBookmarkActivity" />
+        <activity android:name=".mcqbookmark.BookmarkActivity" />
+        <activity android:name=".questiobank.QuestionTestActivity" />
+        <activity android:name=".activity.OverViewActivity" />
+        <activity android:name=".activity.OverAllProgressActivity" />
+        <activity android:name=".faq.FaqsActivity" />
+        <activity android:name=".termandcondition.CancilationPolicyActivity" />
+        <activity android:name=".termandcondition.PrivacyPolicyActivity" />
+        <activity android:name=".contactus.ContactUsActivity" />
+        <activity android:name=".termandcondition.TermConditionActivity" />
+        <activity android:name=".aboutus.AboutUsActivity" />
+        <activity android:name=".acexamfaculty.AcexamFacultyActivity" />
+        <activity android:name=".acenotes.AceNotesActivity" />
+        <activity android:name=".buynow.BuyNowActivity" />
+        <activity android:name=".knowmore.KnowMoreActivity" />
+        <activity
+            android:name=".activity.PdfReaderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImageAcivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReviewDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".questiobank.SubjectListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".questiobank.NewCustomModule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".questiobank.QuestionBankTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustommoduleActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".activity.PlandeatilsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ViewPalnsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.PasswordActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionBankStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PerarlsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ClassesVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ClassesAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollageNameSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollageNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StateSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.YearSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CourseSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.NameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.EmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommonActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".firebase.MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebase.FcmInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

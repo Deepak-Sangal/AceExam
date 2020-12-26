@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutus.AboutUsActivity">
+    <LinearLayout
+        android:id="@+id/about_us_linear1"
+        android:background="@color/pinkcolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <ImageView
+            android:id="@+id/about_us_back"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:text="About us"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/about_us_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:text="@string/about_us"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_below="@+id/about_us_linear1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:text="@string/about_us_2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_below="@+id/about_us_text1"/>
+</RelativeLayout>

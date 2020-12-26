@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp20"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/questionb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/nunitofont"
+                    android:visibility="gone"
+                    android:id="@+id/txt_question_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="SIMPLE EQUATIONS OF A MOTORS"
+                    android:textColor="@color/common"
+                    android:textSize="@dimen/_20sdp">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/img_go_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/cross_circle"
+                    android:visibility="gone">
+
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="@dimen/dp15"
+                    android:visibility="gone"
+                    android:id="@+id/img_unbook"
+                    android:layout_toLeftOf="@+id/img_book"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/unbookmark" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_book"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:src="@drawable/bookmarkcommon"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_toStartOf="@+id/bookmarkwith"
+            android:id="@+id/txt_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:textColor="@color/black"
+            android:textSize="25sp">
+
+        </TextView>
+            <ImageView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/bookmarkwith"
+               android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bookmarkcommon"
+                android:layout_gravity="center"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/firstkey"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="A"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_17sdp"
+                android:gravity="center"
+                android:background="@drawable/corner30pink"
+                android:textColor="@color/common"/>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/txt_ans_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp15"
+            android:text="Arties always carry oxygenated blood throughtout the body"
+            android:textSize="@dimen/sp17" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/secondkey"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="B"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_17sdp"
+                android:gravity="center"
+                android:background="@drawable/corner30pink"
+                android:textColor="@color/common"/>
+
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/txt_answaer_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp15"
+                android:text="Arties always carry oxygenated blood throughtout the body"
+                android:textSize="@dimen/sp17" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/thirdkey"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="C"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_17sdp"
+                android:gravity="center"
+                android:background="@drawable/corner30pink"
+                android:textColor="@color/common"/>
+
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/txt_answer_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp15"
+                android:text="Arties always carry oxygenated blood throughtout the body"
+                android:textSize="@dimen/sp17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/fourkey"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="D"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_17sdp"
+                android:gravity="center"
+                android:background="@drawable/corner30pink"
+                android:textColor="@color/common"/>
+
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/txt_answer_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp15"
+                android:text="Arties always carry oxygenated blood throughtout the body"
+                android:textSize="@dimen/sp17" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/explanication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:id="@+id/explanition"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Herniation of the nidgut during embryogenesis persists until"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/bottomwar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filledcommon"
+            android:text="Next"
+            android:textSize="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_gravity="end"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

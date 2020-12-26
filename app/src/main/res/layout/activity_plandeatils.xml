@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/Gainsboro"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlandeatilsActivity">
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/common">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+
+            <ImageView
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/backv"
+                android:layout_width="25dp"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrowback"/>
+
+            <TextView
+                android:fontFamily="@font/nunitofont"
+                android:visibility="visible"
+                android:id="@+id/titleqwe"
+                android:layout_toStartOf="@+id/settingbtn"
+                android:layout_toEndOf="@+id/backv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Plan"
+                android:textColor="@color/whitetext"
+                android:textSize="@dimen/_15sdp"
+                android:layout_toRightOf="@+id/backbutton" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/settingbtn"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@drawable/bookmarkb"
+                tools:ignore="OnClick" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame">
+        <TextView
+            android:fontFamily="@font/font"
+            android:textColor="@color/black"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Master Classes + Q bank +Text"
+            android:textSize="@dimen/_15sdp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/descriooooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject wise classes (700+ hours), MCQ discussion videos, Revision videos, Image Discussion videos."
+            android:textSize="@dimen/_15sdp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/coupon">
+            <TextView
+                android:fontFamily="@font/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coupon Code"
+                android:textSize="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_12sdp"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Coupon"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@color/common"
+                android:textSize="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_3sdp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/planfirst"
+            android:padding="@dimen/_12sdp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/radioone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:text="12 Month"/>
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/common"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:text="+ 1000 off"/>
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/common"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:text="+ 3 month" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:id="@+id/firstrs"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12000"/>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/font"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="180000"
+                        android:textSize="@dimen/_15sdp"/>
+                    <View
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/black"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:id="@+id/secondplan"
+            android:padding="@dimen/_12sdp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/radiotwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:text="18 Month"/>
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/common"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:text="+ 1000 off"/>
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/common"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:text="+ 3 month" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:id="@+id/secondrs"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12000"/>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="180000"
+                        android:textSize="@dimen/_15sdp"/>
+                    <View
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/black"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/totalprice"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total 29500"
+                android:textStyle="bold"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/month"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Month"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_buy_now"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+            <TextView
+                android:fontFamily="@font/font"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cornerswithfill"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Buy Now"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

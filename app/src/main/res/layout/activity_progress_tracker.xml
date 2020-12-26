@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".progresstracker.ProgressTrackerActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/pinkcolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <ImageView
+            android:id="@+id/tracker_back"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:text="Progress Tracker"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Modules Completed : "
+            android:textColor="@color/pinkcolor"
+            android:textSize="@dimen/_17sdp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/pinkcolor"
+            android:textSize="@dimen/_17sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center">
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="785"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" modules left"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="center">
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/tracker_weekly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weekly"
+            android:gravity="center"
+            android:background="@drawable/cornerswithfill"
+            android:padding="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:visibility="gone"
+            android:id="@+id/tracker_monthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/greycorners"
+            android:padding="@dimen/dimen_15dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:text="Monthly"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp">
+
+        <ImageView
+            android:id="@+id/track_backword"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/circle"
+            app:srcCompat="@drawable/arrowback" />
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/trak_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21 Sept - 28 Sept"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/track_backword"
+            android:layout_toLeftOf="@+id/track_forward"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/trak_date_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13 modules Complete"
+            android:gravity="center"
+            android:textSize="@dimen/_11sdp"
+            android:layout_below="@id/trak_date"
+            android:layout_toRightOf="@id/track_backword"
+            android:layout_toLeftOf="@+id/track_forward"/>
+        <ImageView
+            android:id="@+id/track_forward"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/circle"
+            app:srcCompat="@drawable/ic_arrow_forward"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/txt_progress_one"
+        android:layout_margin="@dimen/_10sdp"
+        android:text=""
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/txt_complete_one"
+        android:text=""
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/txt_progress_two"
+        android:layout_margin="@dimen/_10sdp"
+        android:text=""
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/txt_complete_two"
+        android:text=""
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="visible" />
+
+
+</LinearLayout>

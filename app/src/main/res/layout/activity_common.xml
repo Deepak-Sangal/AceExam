@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".activity.CommonActivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/acelogo" />
+
+
+    <LinearLayout
+        android:id="@+id/common_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bakground"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:foregroundGravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_email">
+
+        </ImageView>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Login with Email/Mobile Number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="OR"
+        android:textColor="@color/pinkcolor"
+        android:textSize="@dimen/sp17">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/google_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bakground"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:foregroundGravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/google">
+
+        </ImageView>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/log_in_with_instagram"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/bnt_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_account"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text="@string/sign_up"
+            android:textColor="@color/pinkcolor"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Here"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/pinkcolor"
+        android:textSize="@dimen/_11sdp">
+
+    </TextView>
+
+</LinearLayout>

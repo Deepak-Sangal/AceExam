@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.EmailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/pinkcolor">
+
+        <ImageView
+            android:id="@+id/backemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/arrowback">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
+        android:padding="@dimen/dp10"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18">
+
+    </TextView>
+
+    <EditText
+        android:fontFamily="@font/font"
+        android:id="@+id/edt_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:backgroundTint="@color/pinkcolor">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp30"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18">
+
+    </Button>
+
+
+</LinearLayout>

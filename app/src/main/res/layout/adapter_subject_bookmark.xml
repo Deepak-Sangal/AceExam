@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_detail_bookmar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp">
+    <TextView
+        android:id="@+id/txt_count"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/txt_count"
+        android:id="@+id/subj_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/subj_bookmark"
+        android:text="Question"
+        android:textSize="@dimen/dimen_15sp"
+       />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/subj_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/subj_bookmark"
+        android:text="Subject Name"
+        android:layout_below="@id/subj_question"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:textColor="@color/bright_sky_color"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:textSize="@dimen/dimen_15sp" />
+    <ImageView
+        android:id="@+id/subj_bookmark"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/bookmarkcommon"/>
+
+
+</RelativeLayout>

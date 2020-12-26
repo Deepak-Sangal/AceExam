@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.StartExamActivity">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/common">
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/backbutton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrowback"/>
+
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/backbutton"
+            android:text="Exam"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dp20"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:fontFamily="@font/nunitofont"
+            android:visibility="gone"
+            android:layout_toStartOf="@+id/settingbtn"
+            android:layout_toEndOf="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Question Bank"
+            android:textColor="@color/whitetext"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/backbutton" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="@dimen/dp15"
+                android:visibility="gone"
+                android:id="@+id/img_unbook"
+                android:layout_toLeftOf="@+id/img_book"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/unbookmark" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_book"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@drawable/bookmarkb"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_marginBottom="@dimen/dp30"
+    android:background="#FFF5F6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2020 National Medical Entrace MOCK TEXT"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/dp10"/>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web only"
+        android:textColor="@color/common"
+        android:layout_margin="@dimen/dp10"/>
+
+</LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/numberofquestion"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="200 Mutiple Choice Question 180 Minutes"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp30"/>
+
+
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:id="@+id/tv_startexam"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Start Exam"
+        android:textSize="@dimen/dp15"
+        android:background="@drawable/filledcommon"
+        android:paddingVertical="@dimen/dp10"
+        android:paddingHorizontal="40dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/toplisting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"/>
+
+
+
+</LinearLayout>

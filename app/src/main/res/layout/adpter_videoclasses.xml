@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5">
+    <LinearLayout
+        android:id="@+id/bookmark"
+        android:paddingVertical="@dimen/dp10"
+        android:background="@drawable/greyborder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_play_arrow_24"/>
+
+            <TextView
+                android:id="@+id/time"
+            android:layout_gravity="center"
+                android:textSize="@dimen/dp15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00:007"
+                android:textColor="@color/common"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_marginStart="17dp"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/dp15"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="fenical Nerver:Course and Area is Supply"/>
+
+    </LinearLayout>
+
+</LinearLayout>

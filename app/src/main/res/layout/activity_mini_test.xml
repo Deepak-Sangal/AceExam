@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".minitest.MiniTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        android:background="@color/pinkcolor"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic__close"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIMHANS Mini Test"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taken on 22 Dec 2020"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_10sdp"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predicted Rank *"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:background="@color/common1"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12sdp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:fontFamily="@font/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500th"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out of 258130"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/about_us_2"
+            android:background="@drawable/grey_corners_0_radious"
+            android:textColor="@color/white"
+            android:padding="@dimen/dp10"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="REVIEW ANSWERS"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/_5sdp"
+            android:background="#FF7185"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="VIEW ANALYTICS"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/pinkcolor"
+            android:paddingTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

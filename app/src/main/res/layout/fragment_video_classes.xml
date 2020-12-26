@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".classes.VideoClassesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layotdata"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <VideoView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/simpleVideoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/buffering_textview"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+           android:src="@drawable/ic_process"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/viewplans"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Plan"
+            android:textColor="@color/common"
+            android:textSize="@dimen/_20sdp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/roate"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+          android:layout_toStartOf="@+id/img_menu"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/light"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_crop_rotate_24"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/play"
+            android:layout_width="38dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/iconawesome" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_below="@+id/play"
+            android:textSize="@dimen/dp20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facial Nerver"/>
+        <ImageView
+            android:background="@drawable/light"
+            android:id="@+id/img_menu"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/black"
+            android:src="@drawable/ic_menu"
+            android:layout_below="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+            <TextView
+                android:layout_marginLeft="@dimen/sp15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.15"
+                android:textColor="@color/common"/>
+            <TextView
+                android:layout_marginLeft="@dimen/sp15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.15k View"
+                android:textColor="@color/common"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/dataaa"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/bookmark_video"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/bookmarkchange"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/bookmarkcommon"/>
+                        <TextView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Bookmark"
+                            android:gravity="center"
+                            android:textSize="@dimen/_8sdp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:padding="@dimen/_5sdp"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/ic_image_slides"/>
+                        <TextView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Slides"
+                            android:gravity="center"
+                            android:textSize="@dimen/_8sdp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/videocompletion"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/correct"/>
+                        <TextView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Complete"
+                            android:gravity="center"
+                            android:textSize="@dimen/_8sdp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:padding="@dimen/_5sdp"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/ic_book"/>
+                        <TextView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Notes"
+                            android:gravity="center"
+                            android:textSize="@dimen/_8sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:id="@+id/videorcycle"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star"/>
+        <TextView
+            android:id="@+id/ratingvalue"
+            android:layout_marginLeft="@dimen/sp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.15"
+            android:textColor="@color/common"/>
+        <TextView
+            android:layout_marginLeft="@dimen/sp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.15k View"
+            android:textColor="@color/common"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_marginStart="@dimen/sp15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sp15">
+            <ImageView
+                android:id="@+id/imagevieww"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cincircle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/sp15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="@dimen/sp15">
+            <TextView
+                android:textColor="@color/blacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Pankaj Sharma"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:textColor="@color/common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MD. Amtory"/>
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common"/>
+            <TextView
+                android:id="@+id/videodescribe"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:maxLines="3"
+                android:text="Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod"/>
+            <TextView
+                android:id="@+id/seemore"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginRight="@dimen/sp15"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="end"
+                android:textColor="@color/common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="see more .."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sp15"
+        android:textSize="20dp"
+        android:textColor="@color/blacktext"
+        android:textStyle="bold"
+        android:text="Slider"
+        android:layout_marginLeft="@dimen/sp15" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/dp15"
+                android:background="@drawable/commonfilled"
+                android:backgroundTint="@color/common"
+                android:orientation="vertical">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/imageeeee"
+    android:scaleType="fitXY"/>
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sp15"
+        android:textSize="20dp"
+        android:textColor="@color/blacktext"
+        android:textStyle="bold"
+        android:text="Notes"
+        android:layout_marginLeft="@dimen/sp15" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="@dimen/dp30">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/dp15"
+            android:background="@drawable/commonfilled"
+            android:backgroundTint="@color/common"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imsssageeeee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/makecomplete"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/commoncolorfillwithoutcorner"
+      android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Leave Feedback"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.StateSelectionActivity">
+    <LinearLayout
+        android:id="@+id/hearder"
+        android:background="@color/pinkcolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <ImageView
+            android:id="@+id/backbutton_state"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@+id/bootom_button"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hearder">
+    <TextView
+        android:fontFamily="@font/font"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/dp20"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:text="@string/state"
+        android:textSize="@dimen/sp18"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recy_state"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <Button
+
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+      android:gravity="center_horizontal"
+        android:id="@+id/bootom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        android:textAllCaps="false"
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

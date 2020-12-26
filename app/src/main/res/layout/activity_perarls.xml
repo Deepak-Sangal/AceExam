@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common">
+
+            <ImageView
+
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/backbutton"
+                android:layout_width="25dp"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrowback"/>
+
+            <TextView
+                android:fontFamily="@font/nunitofont"
+                android:layout_toStartOf="@+id/settingbtn"
+                android:layout_toEndOf="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Types of Calogen"
+                android:textColor="@color/whitetext"
+                android:textSize="25dp"
+                android:layout_toRightOf="@+id/backbutton" />
+
+            <ImageView
+                android:id="@+id/settingbtn"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@drawable/bookmarkcommon"
+                tools:ignore="OnClick" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/dehfvhn"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerneal Amatomy: Extramony"
+            android:layout_marginStart="@dimen/dp10"
+            android:textSize="@dimen/dp20"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:id="@+id/perltag"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pearl #2260: Antonomy"
+            android:layout_marginStart="@dimen/dp10"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

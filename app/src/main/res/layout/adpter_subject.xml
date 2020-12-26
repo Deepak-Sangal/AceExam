@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/clickonclick"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/describtion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:text="Bones of the Lower Limp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nameeeeeeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common"
+            android:text="Qbank"/>
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/gray"/>
+
+
+</LinearLayout>

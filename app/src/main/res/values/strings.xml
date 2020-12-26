@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AceExam</string>
+    <string name="sign_up_email">Sign Up Email</string>
+    <string name="privacy_policy">By signing up you accept to the  Terms&amp;Condition and Privacy Policy</string>
+    <string name="minimum_8_characters">Minimum 8 characters</string>
+    <string name="please_select_your_current_acedmic">Please select your current acedmic year to optimise Ace Exam better for you</string>
+    <string name="state">please select the state your college belongs to</string>
+    <string name="note">Note: Ensure you are selecting the correct college. This can not modified later</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="lasthome">Suggest Aceexam to your friends and family </string>
+    <string name="lasthome1">and any other kind of similar </string>
+    <string name="lasthome2">text possible here</string>
+    <string name="classes">Embryology</string>
+    <string name="about_us">"Anything that gets your blood racing is worth doing. We never give up on any task, we are never afraid of any situation. Have the passion, Take the Action &amp; Magic will happen."</string>
+    <string name="about_us_2">Acexam Is An Online Education Provider That Empower Students With Quality Education Overcoming Barriers Of Students. Acexam Offers An Array Of NEET Online Courses For Effective &amp; Uninterrupted Exam Preparation To Cater The Need Of Variety Of Students. The Online Coaching Has Prepared An Exhaustive Range Of Courses Which Will Help Students To Crack The Esteemed Medical Examination With Ease.</string>
+    <string name="log_in_with_instagram">Login with Google</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+</resources>

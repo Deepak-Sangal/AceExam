@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoitem"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:background="@drawable/commonfilled"
+                android:backgroundTint="@color/common"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+                <ImageView
+                    android:id="@+id/thumable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/iconawesome" />
+
+                <ImageView
+                    android:id="@+id/videopaid"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_lock_24"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/videonameeeeee"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:maxLines="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Sarvesh Goyal, AIIMS PG NOV'18"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

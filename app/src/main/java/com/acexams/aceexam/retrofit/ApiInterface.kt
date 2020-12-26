@@ -68,6 +68,10 @@ interface ApiInterface {
     fun search(@Header("Authorization") token: String?,
          @Query("keyword") keyword: String): Call<SearchResponse>
 
+    @POST("exam-of-day")
+    fun examof(@Header("Authorization") token: String
+              ): Call<examoftheday>
+
     @FormUrlEncoded
     @POST("all_pearls")
     fun allpearls(

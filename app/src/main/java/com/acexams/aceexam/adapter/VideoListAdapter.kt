@@ -99,6 +99,7 @@ class VideoListAdapter(var context: Context, var videolist: List<VideoListRespon
     }
 
     override fun onBindViewHolder(holder: Classessholder, position: Int) {
+        holder.itemView.videotext.text=videolist[position].title
         if(videolist[position].paid==1){
             holder.itemView.videopaid.visibility=View.VISIBLE
         }else{

@@ -15,6 +15,8 @@ import com.acexams.aceexam.Model.GetProfileResponse
 import com.acexams.aceexam.R
 import com.acexams.aceexam.activity.modal.ModResponse
 import com.acexams.aceexam.activity.modal.ProgressTrackerResponse
+import com.acexams.aceexam.activity.modal.examoftheday
+import com.acexams.aceexam.adapter.ExamoftheAdapter
 import com.acexams.aceexam.adapter.VideoodAdapter
 import com.acexams.aceexam.contactus.ContactUsActivity
 import com.acexams.aceexam.mcqbookmark.BookmarkActivity
@@ -73,6 +75,11 @@ class HomeFragement : Fragment(), View.OnClickListener {
             LinearLayoutManager.HORIZONTAL,
             true
         )
+        examoftheday.layoutManager = LinearLayoutManager(
+            activity,
+            LinearLayoutManager.HORIZONTAL,
+            true
+        )
         userId=shareprefrences.getStringPreference(activity!!, "USER_ID").toString()
         id = shareprefrences.getStringPreference(context!!, "USER_ID").toString()
         token = shareprefrences.getStringPreference(context!!, "ACCESS_TOKEN").toString()
@@ -95,7 +102,7 @@ class HomeFragement : Fragment(), View.OnClickListener {
         optionb.setOnClickListener(this)
         optionc.setOnClickListener(this)
         optiond.setOnClickListener(this)
-
+        expalination.visibility=View.GONE
         firliner.setOnClickListener {
             if(count==0) {
                 if (mod[0].is_correct == 1) {
@@ -103,6 +110,7 @@ class HomeFragement : Fragment(), View.OnClickListener {
                 } else {
                     firliner.background = (resources.getDrawable(R.drawable.cornerswithfill))
                 }
+                expalination.visibility=View.VISIBLE
                 getrightanswer()
                 count ++;
             }
@@ -115,6 +123,7 @@ class HomeFragement : Fragment(), View.OnClickListener {
                 } else {
                     linear2.background = (resources.getDrawable(R.drawable.cornerswithfill))
                 }
+                expalination.visibility=View.VISIBLE
                 getrightanswer()
                 count ++
             }
@@ -128,6 +137,7 @@ class HomeFragement : Fragment(), View.OnClickListener {
                 } else {
                     linear3.background = (resources.getDrawable(R.drawable.cornerswithfill))
                 }
+                expalination.visibility=View.VISIBLE
                 getrightanswer()
                 count ++
             }
@@ -139,11 +149,13 @@ class HomeFragement : Fragment(), View.OnClickListener {
                 } else {
                     linear4.background = (resources.getDrawable(R.drawable.cornerswithfill))
                 }
+                expalination.visibility=View.VISIBLE
                 getrightanswer()
                 count++
             }
         }
         video()
+        examoftheday()
         img_user.setOnClickListener {
             startActivity(Intent(context, SettingActivity::class.java))
         }
@@ -229,6 +241,37 @@ class HomeFragement : Fragment(), View.OnClickListener {
             }
 
             override fun onFailure(call: Call<VodResponse>, t: Throwable) {
+                Log.e("data", t.toString())
+            }
+
+        })
+    }
+
+    fun examoftheday() {
+        token = shareprefrences.getStringPreference(activity!!, "ACCESS_TOKEN").toString()
+        val apiService = ApiClient.getClient().create(ApiInterface::class.java)
+        val call = apiService.examof(
+            "Bearer " + token
+        )
+        call.enqueue(object : Callback<examoftheday> {
+            override fun onResponse(
+                call: Call<examoftheday>,
+                response: Response<examoftheday>
+            ) {
+                if (response.code() == 200) {
+                    try {
+                        examoftheday.adapter =
+                            ExamoftheAdapter(activity!!, response.body()!!.data)
+                    }catch (e:java.lang.Exception){
+
+                    }
+                }
+                else if (response.code() == 400) {
+                    Toast.makeText(activity, "Bookmark Not Found", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<examoftheday>, t: Throwable) {
                 Log.e("data", t.toString())
             }
 
@@ -343,6 +386,7 @@ class HomeFragement : Fragment(), View.OnClickListener {
                                         if (response!!.body()!!.data[i].date == date) {
                                             mcqoftheday.visibility=View.VISIBLE
                                             quickquestion.visibility=View.VISIBLE
+                                            expalination.text=response!!.body()!!.data[i].explaination
                                             mod = response!!.body()!!.data[i].answers as ArrayList<ModResponse.Data.Answer>
                                             question.text = response!!.body()!!.data[i].question
                                             optiona.text =

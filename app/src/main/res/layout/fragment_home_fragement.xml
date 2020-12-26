@@ -368,7 +368,7 @@
 
                     <LinearLayout
                         android:id="@+id/mcqoftheday"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:layout_marginLeft="20dp"
@@ -476,6 +476,18 @@
 
                         </LinearLayout>
 
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/expalination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginTop="10dp"
+                            android:text="hello everyone"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+
+
 
                     </LinearLayout>
 
@@ -497,117 +509,10 @@
                         android:textSize="@dimen/dp15" />
 
 
-                    <HorizontalScrollView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/examoftheday"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="250dp"
-                                android:layout_height="150dp"
-                                android:layout_margin="@dimen/dp15"
-                                android:background="@drawable/corners"
-                                android:backgroundTint="@color/common"
-                                android:orientation="vertical">
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="AIIMS test subject"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="@dimen/dp15" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="Exam name 2020"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="@dimen/dp15" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="200 questions"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="10dp" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="200 minutes"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="10dp" />
-
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="250dp"
-                                android:layout_height="150dp"
-                                android:layout_margin="@dimen/dp15"
-                                android:background="@drawable/corners"
-                                android:backgroundTint="@color/common"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="AIIMS test subject"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="@dimen/dp15" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="Exam name 2020"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="@dimen/dp15" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="200 questions"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="10dp" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/dp15"
-                                    android:paddingLeft="@dimen/dp15"
-                                    android:text="200 minutes"
-                                    android:textColor="@color/whitetext"
-                                    android:textSize="10dp" />
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </HorizontalScrollView>
+                        android:layout_height="wrap_content" />
 
 
                     <View

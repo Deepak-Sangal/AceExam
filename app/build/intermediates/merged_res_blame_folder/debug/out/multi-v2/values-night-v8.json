@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DELL\\Desktop\\aceeeeenew\\acexam\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\0d3068737db10bb9e3a99894d7bff27b\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DELL\\Desktop\\aceeeeenew\\acexam\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "16,2",
                         "startColumns": "4,4",

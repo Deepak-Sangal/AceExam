@@ -75,10 +75,11 @@
             android:id="@+id/txt_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginTop="15dp"
             android:text="Question"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:textColor="@color/black"
-            android:textSize="25sp">
+            android:textSize="20sp">
 
         </TextView>
 
@@ -87,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="15dp"
+            android:padding="10dp"
             android:background="@drawable/black_border">
             <TextView
                 android:fontFamily="@font/font"
@@ -115,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="15dp"
+            android:padding="10dp"
         android:layout_marginTop="@dimen/dp20"
         android:background="@drawable/black_border">
             <TextView
@@ -144,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="15dp"
+            android:padding="10dp"
         android:layout_marginTop="@dimen/dp20"
 
         android:background="@drawable/black_border">
@@ -173,7 +174,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="15dp"
+            android:padding="10dp"
         android:layout_marginTop="@dimen/dp20"
         android:background="@drawable/black_border">
             <TextView

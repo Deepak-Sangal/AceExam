@@ -2877,6 +2877,10 @@ drawable white_bakground
 drawable whiteborder
 drawable whitefill
 drawable whitelayout
+font font
+font nunitofont
+font nunitoregular
+font nunitosansregular
 font opensans_bolditalic
 font opensans_extrabold
 font opensans_extrabolditalic
@@ -3175,9 +3179,11 @@ id et_nb_password
 id et_nb_root
 id et_nb_userIdCustomerId
 id examname
+id examoftheday
 id examrecycel
 id exitUntilCollapsed
 id expalin
+id expalination
 id expand_activities_button
 id expanded_menu
 id explanication
@@ -3691,6 +3697,8 @@ id tv_smsPermission
 id tv_startexam
 id tv_submit_otp_time
 id tv_tap_to_pause
+id tv_time
+id tv_titiel
 id tv_user_id_one
 id tv_user_id_three
 id tv_user_id_two
@@ -3742,6 +3750,7 @@ id videoitem
 id videonameeeeee
 id videopaid
 id videorcycle
+id videotext
 id videro
 id view1
 id viewDarkBlue
@@ -3886,6 +3895,7 @@ layout adapter_subject_bookmark
 layout adpter_classes
 layout adpter_classesdrop
 layout adpter_exam
+layout adpter_examoftheday
 layout adpter_faculty
 layout adpter_pearls
 layout adpter_pearlsdeatils

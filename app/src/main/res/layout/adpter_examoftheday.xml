@@ -1,0 +1,50 @@
+<LinearLayout
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/dp15"
+    android:background="@drawable/corners"
+    android:backgroundTint="@color/common"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/tv_titiel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        android:text="AIIMS test subject"
+        android:textColor="@color/whitetext"
+        android:textSize="@dimen/dp15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        android:text="Exam name 2020"
+        android:textColor="@color/whitetext"
+        android:textSize="@dimen/dp15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/dp15"
+        android:text="200 questions"
+        android:textColor="@color/whitetext"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        android:text="200 minutes"
+        android:textColor="@color/whitetext"
+        android:textSize="10dp" />
+
+
+</LinearLayout>

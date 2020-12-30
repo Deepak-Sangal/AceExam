@@ -39,7 +39,7 @@
                 android:textSize="20dp" />
 
             <ImageView
-
+                android:visibility="gone"
                 android:id="@+id/settingbtn"
                 android:layout_width="@dimen/dp20"
                 android:layout_height="@dimen/dp20"

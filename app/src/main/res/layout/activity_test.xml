@@ -6,8 +6,9 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_above="@+id/heeeeeeeee"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
@@ -69,26 +70,46 @@
                     />
             </LinearLayout>
         </LinearLayout>
-
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/font"
+                android:id="@+id/questioncount"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="1"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="1dp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center"
+                android:background="@drawable/corner30pink"
+                android:textColor="@color/common"/>
         <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/questioncount"
             android:fontFamily="@font/font"
             android:id="@+id/txt_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:text="Question"
             android:layout_marginBottom="@dimen/_5sdp"
             android:textColor="@color/black"
             android:textSize="20sp">
 
+
         </TextView>
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/firsttext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="5dp"
             android:background="@drawable/black_border">
             <TextView
                 android:fontFamily="@font/font"
@@ -97,7 +118,8 @@
                 android:text="A"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:textSize="@dimen/_17sdp"
+                android:padding="1dp"
+                android:textSize="@dimen/_16sdp"
                 android:gravity="center"
                 android:background="@drawable/corner30pink"
                 android:textColor="@color/common"/>
@@ -116,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="5dp"
         android:layout_marginTop="@dimen/dp20"
         android:background="@drawable/black_border">
             <TextView
@@ -125,8 +147,9 @@
                 android:layout_height="@dimen/_30sdp"
                 android:text="B"
                 android:layout_gravity="center"
+                android:padding="1dp"
                 android:textStyle="bold"
-                android:textSize="@dimen/_17sdp"
+                android:textSize="@dimen/_16sdp"
                 android:gravity="center"
                 android:background="@drawable/corner30pink"
                 android:textColor="@color/common"/>
@@ -145,7 +168,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="5dp"
         android:layout_marginTop="@dimen/dp20"
 
         android:background="@drawable/black_border">
@@ -156,7 +179,8 @@
                 android:text="C"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:textSize="@dimen/_17sdp"
+                android:padding="1dp"
+                android:textSize="@dimen/_16sdp"
                 android:gravity="center"
                 android:background="@drawable/corner30pink"
                 android:textColor="@color/common"/>
@@ -174,7 +198,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="5dp"
         android:layout_marginTop="@dimen/dp20"
         android:background="@drawable/black_border">
             <TextView
@@ -184,7 +208,8 @@
                 android:text="D"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:textSize="@dimen/_17sdp"
+                android:padding="@dimen/dimen_1dp"
+                android:textSize="@dimen/_16sdp"
                 android:gravity="center"
                 android:background="@drawable/corner30pink"
                 android:textColor="@color/common"/>
@@ -217,6 +242,7 @@
     </LinearLayout>
 
   <RelativeLayout
+      android:id="@+id/heeeeeeeee"
       android:layout_alignParentBottom="true"
       android:layout_width="match_parent"
       android:layout_height="wrap_content">

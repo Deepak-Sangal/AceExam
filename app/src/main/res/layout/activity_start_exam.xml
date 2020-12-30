@@ -83,6 +83,7 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/texttitle"
         android:fontFamily="@font/font"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

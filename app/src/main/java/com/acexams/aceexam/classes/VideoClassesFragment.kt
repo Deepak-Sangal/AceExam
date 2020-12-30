@@ -67,6 +67,7 @@ lateinit var videoURL:String
     var videoid:String=""
     var rating:Float = 0.0f
    var  complete:String=""
+   var  videobookmark:String=""
     lateinit var mediaController:MediaController
 lateinit var token:String
     override fun onCreateView(
@@ -85,6 +86,7 @@ lateinit var token:String
         paid=shareprefrences.getStringPreference(activity!!, "paid").toString()
         videoid=shareprefrences.getStringPreference(activity!!, "videoid").toString()
         complete=shareprefrences.getStringPreference(activity!!, "completed").toString()
+        videobookmark=shareprefrences.getStringPreference(activity!!, "videobookmark").toString()
         text.text=shareprefrences.getStringPreference(activity!!, "descrition").toString()
         Video= (view.findViewById(R.id.simpleVideoView) as VideoView)!!
         videoURL=shareprefrences.getStringPreference(activity!!, "VIDEO_URL").toString()
@@ -92,6 +94,26 @@ lateinit var token:String
             viewplans.visibility=View.VISIBLE
         }else{
             viewplans.visibility=View.GONE
+        }
+
+        if (complete=="0"){
+            videocompletion.setImageResource(R.drawable.correct)
+        }else{
+            videocompletion.setImageResource(R.drawable.completegreen)
+        }
+
+        if (videobookmark=="0"){
+            bookmarkchange.setImageResource(R.drawable.redbookmark)
+        }else{
+            bookmarkchange.setImageResource(R.drawable.unbookmark)
+        }
+
+        bookmarkchange.setOnClickListener{
+            if(videobookmark=="0"){
+                bookkmark()
+            }else{
+                unbookkmark()
+            }
         }
 //        if(complete=="0"){
 //            tv_complete.text="MAKE COMPLETE"
@@ -130,11 +152,13 @@ lateinit var token:String
         }
         videocompletion.setOnClickListener{
             if (complete=="0"){
+                completestatus()
                 complete="1"
             }else{
+                completestatus()
                 complete="0"
             }
-            completestatus()
+
 //            opendialog()
         }
         makecomplete.setOnClickListener{
@@ -205,20 +229,19 @@ lateinit var token:String
             dataaa.visibility=View.GONE
             layotdata.layoutParams.height=ActionBar.LayoutParams.MATCH_PARENT
 //            (context as ClassesVideoActivity).requestedOrientation=ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-            getActivity()!!.getWindow().addFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            );
+//            getActivity()!!.getWindow().addFlags(
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN
+//            );
             getActivity()!!.getWindow().clearFlags(
                 WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
             );
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             dataaa.visibility=View.VISIBLE
-            layotdata.layoutParams.height=500
-
+//            layotdata.layoutParams.height=500
 //            (context as ClassesVideoActivity).requestedOrientation=ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-            getActivity()!!.getWindow().addFlags(
-                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
-            );
+//           getActivity()!!.getWindow().addFlags(
+//               WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
+//         );
             getActivity()!!.getWindow().clearFlags(
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             );
@@ -452,9 +475,9 @@ image=imageBaseUrlNewlive + "notes/" + response.body()!!.data.notesData[0].note_
                         var message=json.getString("message")
                         Toast.makeText(activity,message,Toast.LENGTH_SHORT).show()
                         if (complete=="0"){
-                            videocompletion.setImageResource(R.drawable.done_24)
+                            videocompletion.setImageResource(R.drawable.correct)
                         }else{
-                            videocompletion.setImageResource(R.drawable.ic_baseline_done_24)
+                            videocompletion.setImageResource(R.drawable.completegreen)
                         }
                     }
                     else if (status.toInt()==401){
@@ -485,6 +508,7 @@ image=imageBaseUrlNewlive + "notes/" + response.body()!!.data.notesData[0].note_
             override fun onResponse(call: Call<VideoBookmarkResponse>, response: Response<VideoBookmarkResponse>) {
                 if (response.code()==200){
                     if(response.body()!!.status==200){
+                        videobookmark="0"
                         bookmarkchange.setImageResource(R.drawable.redbookmark)
                     }
                 }
@@ -502,12 +526,13 @@ image=imageBaseUrlNewlive + "notes/" + response.body()!!.data.notesData[0].note_
         val call = apiService.videobookmark(
             videoid,
             "Bearer " + token,
-            "0"
+            "1"
         )
         call.enqueue(object : Callback<VideoBookmarkResponse> {
             override fun onResponse(call: Call<VideoBookmarkResponse>, response: Response<VideoBookmarkResponse>) {
                 if (response.code()==200){
                     if(response.body()!!.status==200){
+                        videobookmark="1"
                         bookmarkchange.setImageResource(R.drawable.unbookmark)
                     }else{
                         Toast.makeText(activity,"Something Went Wrong",Toast.LENGTH_SHORT).show()

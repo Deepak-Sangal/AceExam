@@ -26,14 +26,15 @@ import java.lang.Exception
 class ContactUsActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     var userId:String=""
     var details : Array<String> = arrayOf(
-        "others",
+        "Select Problem Type",
         "QBank modules",
         "Video",
         "Subscription & Refund",
         "General Question",
         "Acexam Notes",
         "Help & Support",
-        "Test Series"
+        "Test Series",
+        "others",
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -9,6 +9,8 @@ data class examoftheday(
         val created_at: String,
         val duration: Int,
         val id: Int,
+        val no_question_count: Int,
+        val test_given_count: Int,
         val instuction: String,
         val is_featured: Int,
         val status: Int,

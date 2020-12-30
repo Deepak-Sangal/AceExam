@@ -14,6 +14,7 @@ class ReviewActivity : AppCompatActivity() {
     var crt:String="0"
     var skp:String="0"
     var incr:String="0"
+    var total:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_review)
@@ -21,9 +22,13 @@ class ReviewActivity : AppCompatActivity() {
         test_id=intent.getStringExtra("team_id").toString()
         user_id=intent.getStringExtra("user").toString()
         crt=intent.getStringExtra("correct").toString()
+        ciorrrr.text=intent.getStringExtra("correct").toString()
         incr=intent.getStringExtra("in_correct").toString()
         skp=intent.getStringExtra("skipped").toString()
         txt_result.text=totalScore+"% Percentile"
+        total=crt.toInt()+skp.toInt()+incr.toInt()
+        totalllllll.text="Total score out of " + total.toString()
+//        total=crt.toInt()+skp.toInt()+incr.toInt()
 
         txt_crt_ans.text= crt
         txt_incr_ansr.text=incr

@@ -47,6 +47,6 @@ class QuestionBankAdapter(var context: Context, var topiclikst:List<Qbanksubject
         holder.itemView.nameeeee.text=topiclikst[position].level_name
         holder.itemView.topiccount.text=topiclikst[position].topic_count+" Topics"
         holder.itemView.quetionbankrecycle.layoutManager = LinearLayoutManager(context)
-        holder.itemView.quetionbankrecycle.adapter = QuestionBankDeailsAdapter(context,topiclikst[position].topic)
+        holder.itemView.quetionbankrecycle.adapter = QuestionBankDeailsAdapter(context,topiclikst[position].topic,topiclikst[position].level_name)
     }
 }

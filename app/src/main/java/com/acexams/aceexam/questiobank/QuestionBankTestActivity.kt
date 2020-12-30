@@ -264,8 +264,6 @@ class QuestionBankTestActivity : AppCompatActivity(){
                 )
             )
 
-
-
             hashMap.put(questiondata, answerfinal)
             Log.e("datass", hashMap.toString())
 
@@ -423,7 +421,6 @@ class QuestionBankTestActivity : AppCompatActivity(){
         call.enqueue(object : Callback<QuestionBankTestListModal> {
             override fun onResponse(call: Call<QuestionBankTestListModal>, response: Response<QuestionBankTestListModal>) {
                 if (response.code() == 200) {
-
                     if (response.body()!!.status!!.toInt() == 200 && response.body()!!.data != null) {
                         var question = response.body()!!.data.questionlist
                         testid=response!!.body()!!.data.id.toString()
@@ -491,7 +488,8 @@ class QuestionBankTestActivity : AppCompatActivity(){
 
     fun customsumit() {
 
-        Log.e("questiondatata",questiondata)
+        Log.e("questiondatata",questionArrayList.toString())
+        Log.e("answerdatadatata",answerArrayList.toString())
 
 
         val map: MutableMap<String, RequestBody> = HashMap()
@@ -556,7 +554,6 @@ class QuestionBankTestActivity : AppCompatActivity(){
                         intent.putExtra("in_correct", incorect)
                         intent.putExtra("skipped", skied)
                         startActivity(intent)
-
                     } else if (status == 401) {
                         var message = json.getString("message")
                         Toast.makeText(this@QuestionBankTestActivity, message, Toast.LENGTH_SHORT).show()
@@ -567,16 +564,12 @@ class QuestionBankTestActivity : AppCompatActivity(){
                         "Something Went Wrong",
                         Toast.LENGTH_SHORT
                     ).show()
-
                 }
             }
 
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-
                 Log.e("error", t.toString())
             }
-
-
         })
 
 

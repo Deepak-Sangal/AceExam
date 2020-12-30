@@ -10,9 +10,9 @@ public final class DashBoardActivity extends androidx.appcompat.app.AppCompatAct
     @org.jetbrains.annotations.NotNull()
     public android.app.Dialog dialog;
     @org.jetbrains.annotations.NotNull()
-    private final java.lang.String[] titles = {"Home", "Know More", "Buy Now", "Acexam Notes", "Acexam Faculty", "FAQ", "Share", "About Us", "Contact US", "T&C", "Log Out"};
+    private final java.lang.String[] titles = {"Home", "Explore Acexam", "Enroll Now", "Study Metarial", "Acexam Faculty", "FAQ", "Share", "About Us", "Contact US", "T&C", "Log Out"};
     @org.jetbrains.annotations.NotNull()
-    private final java.lang.Integer[] titlesImages = {2131165636, 2131165691, 2131165309, 2131165718, 2131165370, 2131165371, 2131165752, 2131165277, 2131165339, 2131165756, 2131165696};
+    private final java.lang.Integer[] titlesImages = {2131165638, 2131165693, 2131165309, 2131165720, 2131165371, 2131165372, 2131165754, 2131165277, 2131165340, 2131165758, 2131165698};
     @org.jetbrains.annotations.Nullable()
     private androidx.fragment.app.Fragment currentFag;
     private java.util.HashMap _$_findViewCache;

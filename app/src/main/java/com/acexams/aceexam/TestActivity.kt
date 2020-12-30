@@ -107,7 +107,8 @@ class TestActivity : AppCompatActivity() {
                 answertwo = questionlist[i].questionset[0].answers[1].options
                 answerthree = questionlist[i].questionset[0].answers[2].options
                 answerfour = questionlist[i].questionset[0].answers[3].options
-                txt_question.setText( (i+1).toString() + ") " + questiondata)
+                questioncount.text= (i+1).toString()
+                txt_question.setText(questiondata)
                 txt_ans_one.setText(answerone)
                 txt_answaer_two.setText(answertwo)
                 txt_answer_three.setText(answerthree)

@@ -30,6 +30,7 @@ class ExamAdapter(var context: Context, var examlist: List<TestexamResponse.Data
                 intent.putExtra("durationa",examlist[adapterPosition].duration.toString())
                 intent.putExtra("questionid",examlist[adapterPosition].id.toString())
                 intent.putExtra("testnumber",examlist[adapterPosition].is_given.toString())
+                intent.putExtra("testtitle",examlist[adapterPosition].title.toString())
                 context.startActivity(intent)
             }
         }

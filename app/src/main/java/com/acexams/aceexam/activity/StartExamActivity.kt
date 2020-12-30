@@ -40,6 +40,8 @@ class StartExamActivity : AppCompatActivity() {
         questioncount=intent.getStringExtra("testnumber").toString()
         noofcoint=intent.getStringExtra("noofquestion").toString()
         questionidquestionid=intent.getStringExtra("questionid").toString()
+        texttitle.text=intent.getStringExtra("testtitle").toString()
+
         userId=shareprefrences.getStringPreference(this, "USER_ID").toString()
         Log.e("userid",userId)
         backbutton.setOnClickListener {
@@ -55,7 +57,6 @@ class StartExamActivity : AppCompatActivity() {
                 intent.putExtra("duration", duration)
                 intent.putExtra("questionid", questionidquestionid)
                 startActivity(intent)
-
             }else {
                 Toast.makeText(this,"Already Given",Toast.LENGTH_SHORT).show()
             }
@@ -63,12 +64,10 @@ class StartExamActivity : AppCompatActivity() {
 
 
         img_unbook.setOnClickListener {
-
             UnbookMark()
         }
 
         img_book.setOnClickListener {
-
             bookMark()
         }
 

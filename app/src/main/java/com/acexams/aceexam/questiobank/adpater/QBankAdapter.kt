@@ -34,6 +34,7 @@ class QBankAdapter(var context: Context, var questionbanklist: List<Qbanksubject
 
     override fun onBindViewHolder(holder: QuestionBankHolder, position: Int) {
        holder.itemView.qbankname.text=questionbanklist[position].title
+       holder.itemView.textcomplete.text=questionbanklist[position].total_completed.toString() +"/" +questionbanklist[position].total_topics +" Completed"
     }
 
     override fun getItemCount(): Int {

@@ -50,7 +50,7 @@
             android:id="@+id/edt_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="deepak"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="14sp"/>
         <TextView
@@ -64,7 +64,7 @@
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="deepak@zooneto.com"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="14sp"/>
         <TextView
@@ -78,7 +78,7 @@
             android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="7248661000"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="14sp"/>
         <TextView
@@ -92,7 +92,7 @@
             android:id="@+id/tv_college"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medical"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="14sp"/>
         <TextView
@@ -106,7 +106,7 @@
             android:id="@+id/tv_year"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fourth Prof"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="14sp"/>
 

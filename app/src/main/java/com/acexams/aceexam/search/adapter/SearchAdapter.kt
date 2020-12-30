@@ -40,6 +40,7 @@ class SearchAdapter(var context: Context,var list: List<SearchResponse.Data>):Re
                 }else if(list[adapterPosition].seachtype=="Pearl"){
                     val intent = Intent(context, PerarlsActivity::class.java)
                     intent.putExtra("perldescrbion",list[adapterPosition].description)
+                    intent.putExtra("pearltitle",list[adapterPosition].keyname)
                     intent.putExtra("bookmark","0")
                     intent.putExtra("pearlid",list[adapterPosition].id.toString())
                     context.startActivity(intent)

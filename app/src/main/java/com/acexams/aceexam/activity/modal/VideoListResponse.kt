@@ -15,6 +15,7 @@ data class VideoListResponse(
         val completed:Int,
         val avgRating:Float,
         val paid:Int,
+        val status_videoBookmarked:Int,
         val level_id: Int,
         val thumbnail:String,
         val name: String,

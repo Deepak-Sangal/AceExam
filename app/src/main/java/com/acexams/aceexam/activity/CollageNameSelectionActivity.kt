@@ -25,14 +25,17 @@ import com.acexams.aceexam.retrofit.ApiInterface
 import com.acexams.aceexam.R
 import com.acexams.aceexam.activity.modal.SendotpRespone
 import com.acexams.aceexam.user.LoginActivity
+import com.rilixtech.widget.countrycodepicker.CountryCodePicker
 import com.talkingtb.talkingtb.remote.ApiClient
 import kotlinx.android.synthetic.main.activity_collage_name_selection.*
+import kotlinx.android.synthetic.main.fragment_video_classes.view.*
 import okhttp3.ResponseBody
 import org.json.JSONObject
 
 class CollageNameSelectionActivity : AppCompatActivity() {
     var dialog: Dialog? = null
     var number: String? = null
+    var code: String? = null
     lateinit var google_login_value:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,6 +75,7 @@ class CollageNameSelectionActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please Enter Valid Number", Toast.LENGTH_SHORT).show()
             } else {
                 number = dialog?.findViewById<EditText>(R.id.number)!!.text.toString()
+                code=dialog?.findViewById<CountryCodePicker>(R.id.ccp)!!.defaultCountryCode.toString()
                 sendsms(dialog!!, dialog?.findViewById<EditText>(R.id.number)!!.text.toString())
             }
         }
@@ -114,6 +118,7 @@ class CollageNameSelectionActivity : AppCompatActivity() {
         val apiService = ApiClient.getClient().create(ApiInterface::class.java)
         val hashMap: HashMap<String, String> = HashMap()
         hashMap.put("mobile", numer)
+        hashMap.put("country_code", code.toString())
         hashMap.put("email", shareprefrences.getStringPreference(this, "email").toString())
         val call = apiService.sendotp(
             hashMap

@@ -11,6 +11,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
+import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -28,7 +29,6 @@ import kotlinx.android.synthetic.main.activity_question_test.txt_answaer_two
 import kotlinx.android.synthetic.main.activity_question_test.txt_answer_four
 import kotlinx.android.synthetic.main.activity_question_test.txt_answer_three
 import kotlinx.android.synthetic.main.activity_question_test.txt_question
-import kotlinx.android.synthetic.main.activity_test.*
 import kotlinx.android.synthetic.main.fragment_home_fragement.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody
@@ -61,6 +61,7 @@ class QuestionTestActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_test)
+        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         id= shareprefrences.getStringPreference(this,"topicid")!!
         userId=shareprefrences.getStringPreference(this, "USER_ID").toString()
         questionbank()
@@ -103,7 +104,8 @@ class QuestionTestActivity : AppCompatActivity(), View.OnClickListener {
                             answertwo = qbanklis[0].answers[1].options
                             answerthree = qbanklis[0].answers[2].options
                             answerfour = qbanklis[0].answers[3].options
-                            txt_question.text ="1) " + question
+                            questioncount.text="1"
+                            txt_question.text =question
                             txt_ans_one.text = answerone
                             txt_answaer_two.text = answertwo
                             txt_answer_three.text = answerthree
@@ -240,7 +242,8 @@ when(v!!.id){
                 answertwo = qbanklis[i].answers[1].options
                 answerthree = qbanklis[i].answers[2].options
                 answerfour = qbanklis[i].answers[3].options
-                txt_question.text =(i+1).toString() + ") " + question
+                questioncount.text=(i+1).toString()
+                txt_question.text =question
                 txt_ans_one.text = answerone
                 txt_answaer_two.text = answertwo
                 txt_answer_three.text = answerthree

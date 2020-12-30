@@ -36,9 +36,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
         android:layout_marginTop="@dimen/dp5"
-        android:layout_marginEnd="@dimen/dimen_20dp"
         android:orientation="vertical">
 
         <TextView
@@ -64,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/sp17"
                 android:padding="@dimen/dimen_10dp"
-                android:background="@drawable/edittext"
+                android:background="@drawable/greycorners_4dp"
                 android:text="Select problem type : "
                 android:textColor="@color/black"/>
             <ImageView
@@ -80,9 +79,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:background="@color/white"
-            android:elevation="5dp"
             android:layout_marginTop="@dimen/dp5">
 
             <EditText
@@ -94,7 +91,7 @@
                 android:textColorHint="@color/gray_666666"
                 android:gravity="top"
                 android:padding="@dimen/dimen_10dp"
-                android:background="@drawable/edittext"
+                android:background="@drawable/greycorners_4dp"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/black"
                 android:textSize="@dimen/dimen_15sp"/>
@@ -106,29 +103,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit"
+            android:textStyle="bold"
+            android:textAllCaps="true"
             android:padding="@dimen/dimen_10dp"
             android:gravity="center"
-            android:background="@color/light_gray_a9a9a9"
+            android:backgroundTint="@color/common"
+            android:background="@drawable/greycorners_4dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/dp20"
             android:textColor="@color/white"/>
-<!--
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OR"
-            android:textColor="@color/gray_666666"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/dimen_10dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext"
-            android:padding="@dimen/dimen_10dp"
-            android:gravity="center"
-            android:textColor="@color/pinkcolor"
-            android:text="Request A Callback"/>
--->
+        <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textColor="@color/gray_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:padding="@dimen/dimen_10dp"
+                    android:gravity="center"
+                    android:textColor="@color/pinkcolor"
+                    android:text="Request A Callback"/>
+        -->
 
         <TextView
             android:fontFamily="@font/font"
@@ -158,7 +158,6 @@
 
         </LinearLayout>
 
-<!--
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/dimen_10dp"
@@ -168,14 +167,15 @@
                 android:layout_height="25dp"
                 android:src="@drawable/ic_call"/>
             <TextView
+                android:fontFamily="@font/font"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/dimen_10dp"
-                android:text="+91-9779421738"/>
+                android:text="+91-9051033861"/>
 
         </LinearLayout>
--->
 
     </LinearLayout>
 

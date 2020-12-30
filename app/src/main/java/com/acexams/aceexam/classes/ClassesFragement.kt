@@ -81,7 +81,6 @@ class ClassesFragement : Fragment() {
                                     recycle.adapter = ClassesAdapter(activity!!, response!!.body()!!.data)
                                 }
                             }
-
                         } catch (e: Exception) {
                             Log.e("exception", e.toString())
                         }

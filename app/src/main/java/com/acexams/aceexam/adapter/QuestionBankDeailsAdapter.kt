@@ -11,13 +11,15 @@ import com.acexams.aceexam.activity.QuestionBankStartActivity
 import com.acexams.aceexam.activity.modal.QbanksubjectResponse
 import kotlinx.android.synthetic.main.adpter_questionbankdetals.view.*
 
-class QuestionBankDeailsAdapter(var context:Context,var questionlist: ArrayList<QbanksubjectResponse.Data.Chapter.Topic>):RecyclerView.Adapter<QuestionBankDeailsAdapter.QuestionBankholder>() {
+class QuestionBankDeailsAdapter(var context:Context,var questionlist: ArrayList<QbanksubjectResponse.Data.Chapter.Topic>,var data:String):RecyclerView.Adapter<QuestionBankDeailsAdapter.QuestionBankholder>() {
    inner class QuestionBankholder (itemView: View) : RecyclerView.ViewHolder(itemView){
         init {
 
          itemView.clickid.setOnClickListener{
              var intent= Intent(context, QuestionBankStartActivity::class.java)
              shareprefrences.setStringPreference(context,"topicid",questionlist[adapterPosition].id.toString())
+             shareprefrences.setStringPreference(context,"topicname",questionlist[adapterPosition].name.toString())
+             shareprefrences.setStringPreference(context,"dfdfdfdfdfd",data)
              shareprefrences.setStringPreference(context,"questioncount",questionlist[adapterPosition].count.toString())
              context.startActivity(intent)
          }

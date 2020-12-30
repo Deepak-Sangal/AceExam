@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:visibility="gone"
             android:fontFamily="@font/font"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

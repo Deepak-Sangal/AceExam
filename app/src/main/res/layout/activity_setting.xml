@@ -59,8 +59,8 @@
         <TextView
             android:fontFamily="@font/font"
             android:layout_height="wrap_content"
-            android:layout_width="204.0dip"
-            android:text="Account Settings"
+            android:layout_width="wrap_content"
+            android:text="Account"
             android:textColor="@color/blacktext"
             android:textStyle="bold"
             android:textSize="20.0sp"

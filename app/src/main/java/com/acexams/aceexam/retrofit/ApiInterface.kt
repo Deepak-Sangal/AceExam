@@ -233,7 +233,7 @@ interface ApiInterface {
     @FormUrlEncoded
     @POST("video-bookmark")
     fun videobookmark(
-        @Field("question_id") token: String,
+        @Field("video_id") video_id: String,
         @Field("user_id") test_id: String,
         @Field("status") status: String
     ): Call<VideoBookmarkResponse>
@@ -411,6 +411,7 @@ interface ApiInterface {
     fun questionbankquestio(
         @Header("Authorization") token: String?,
         @Field("topic_id") topic_id: String,
+        @Field("user_id") test_id: String,
     ): Call<QbanksubjectResponse>
 
 

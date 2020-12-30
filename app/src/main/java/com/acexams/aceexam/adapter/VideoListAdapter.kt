@@ -42,6 +42,11 @@ class VideoListAdapter(var context: Context, var videolist: List<VideoListRespon
                 )
                 shareprefrences.setStringPreference(
                     context,
+                    "videobookmark",
+                    videolist[adapterPosition].status_videoBookmarked.toString()
+                )
+                shareprefrences.setStringPreference(
+                    context,
                     "VIDEO_URL",
                     "http://www.acexam.com/web/public/uploads/courses/" + videolist[adapterPosition].name
                 )

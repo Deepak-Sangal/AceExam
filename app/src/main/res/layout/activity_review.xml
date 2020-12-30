@@ -30,12 +30,13 @@
                     android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NIMHANS Mini Test"
+                    android:text="Test"
                     android:textStyle="bold"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
                     android:textSize="@dimen/_15sdp"/>
                 <TextView
+                    android:visibility="gone"
                     android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,6 +45,7 @@
                     android:layout_gravity="center"
                     android:textSize="@dimen/_10sdp"/>
                 <TextView
+                    android:visibility="gone"
                     android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -123,6 +125,7 @@
                 android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_below="@id/miniTest_linear1">
                 <TextView
+                    android:id="@+id/ciorrrr"
                     android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -132,6 +135,7 @@
                     android:layout_gravity="center"
                     android:textSize="@dimen/_20sdp"/>
                 <TextView
+                    android:id="@+id/totalllllll"
                     android:fontFamily="@font/font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

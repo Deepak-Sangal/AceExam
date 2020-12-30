@@ -7,7 +7,7 @@ public final class ContactUsActivity extends androidx.appcompat.app.AppCompatAct
     @org.jetbrains.annotations.NotNull()
     private java.lang.String userId = "";
     @org.jetbrains.annotations.NotNull()
-    private java.lang.String[] details = {"others", "QBank modules", "Video", "Subscription & Refund", "General Question", "Acexam Notes", "Help & Support", "Test Series"};
+    private java.lang.String[] details = {"Select Problem Type", "QBank modules", "Video", "Subscription & Refund", "General Question", "Acexam Notes", "Help & Support", "Test Series", "others"};
     private java.util.HashMap _$_findViewCache;
     
     @org.jetbrains.annotations.NotNull()

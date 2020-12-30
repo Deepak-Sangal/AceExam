@@ -648,6 +648,10 @@
         "source": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\src\\main\\res\\layout\\subjectlist_layout.xml"
     },
     {
+        "merged": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\build\\intermediates\\res\\merged\\debug\\drawable_completegreen.png.flat",
+        "source": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\src\\main\\res\\drawable\\completegreen.png"
+    },
+    {
         "merged": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unbookmark.png.flat",
         "source": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\src\\main\\res\\drawable\\unbookmark.png"
     },
@@ -710,6 +714,10 @@
     {
         "merged": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_video_classes.xml.flat",
         "source": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\src\\main\\res\\layout\\fragment_video_classes.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greycorners_4dp.xml.flat",
+        "source": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\src\\main\\res\\drawable\\greycorners_4dp.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\Desktop\\ace_26_12\\AceExam\\app\\build\\intermediates\\res\\merged\\debug\\font_opensans_extrabolditalic.ttf.flat",

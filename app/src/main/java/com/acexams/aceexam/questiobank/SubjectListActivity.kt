@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.acexams.aceexam.retrofit.ApiInterface
@@ -30,6 +31,7 @@ class SubjectListActivity : AppCompatActivity(),SubjectAdpater.Sub_serviceListne
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_subject_list)
+        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         subject_topic= SubjectTopicActivity.subjectid_topic_ListData
         Log.e("datanidihi",subject_topic.toString())
 

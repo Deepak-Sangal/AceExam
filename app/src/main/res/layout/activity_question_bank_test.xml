@@ -140,23 +140,23 @@
             android:orientation="vertical">
 
             <TextView
-                android:fontFamily="@font/font"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="@drawable/bluecolor_circle"
+                android:fontFamily="@font/font"
                 android:gravity="center"
                 android:text="Submit"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="@dimen/sp17" />
 
-        <!--    <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp5"
-                android:text="Test completion"
-                android:textColor="@color/black"
-                android:textSize="13sp" />-->
+            <!--    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="Test completion"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />-->
         </LinearLayout>
 
 

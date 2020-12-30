@@ -82,7 +82,7 @@ public final class QbanksubjectResponse implements java.io.Serializable {
         return false;
     }
     
-    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001:\u0001-B]\u0012\u0016\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u0006\u0010\f\u001a\u00020\n\u0012\u0006\u0010\r\u001a\u00020\n\u0012\u0006\u0010\u000e\u001a\u00020\u0007\u0012\u0006\u0010\u000f\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0010J\u0019\u0010\u001d\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005H\u00c6\u0003J\t\u0010\u001e\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\u001f\u001a\u00020\u0007H\u00c6\u0003J\t\u0010 \u001a\u00020\nH\u00c6\u0003J\t\u0010!\u001a\u00020\nH\u00c6\u0003J\t\u0010\"\u001a\u00020\nH\u00c6\u0003J\t\u0010#\u001a\u00020\nH\u00c6\u0003J\t\u0010$\u001a\u00020\u0007H\u00c6\u0003J\t\u0010%\u001a\u00020\u0007H\u00c6\u0003Js\u0010&\u001a\u00020\u00002\u0018\b\u0002\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\n2\b\b\u0002\u0010\f\u001a\u00020\n2\b\b\u0002\u0010\r\u001a\u00020\n2\b\b\u0002\u0010\u000e\u001a\u00020\u00072\b\b\u0002\u0010\u000f\u001a\u00020\u0007H\u00c6\u0001J\u0013\u0010\'\u001a\u00020(2\b\u0010)\u001a\u0004\u0018\u00010*H\u00d6\u0003J\t\u0010+\u001a\u00020\nH\u00d6\u0001J\t\u0010,\u001a\u00020\u0007H\u00d6\u0001R!\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\b\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u000b\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0011\u0010\f\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0017R\u0011\u0010\r\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0017R\u0011\u0010\u000e\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0014R\u0011\u0010\u000f\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0014\u00a8\u0006."}, d2 = {"Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data;", "Ljava/io/Serializable;", "chapter", "Ljava/util/ArrayList;", "Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data$Chapter;", "Lkotlin/collections/ArrayList;", "created_at", "", "description", "id", "", "paid", "status", "teacher_id", "title", "updated_at", "(Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;IIIILjava/lang/String;Ljava/lang/String;)V", "getChapter", "()Ljava/util/ArrayList;", "getCreated_at", "()Ljava/lang/String;", "getDescription", "getId", "()I", "getPaid", "getStatus", "getTeacher_id", "getTitle", "getUpdated_at", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "", "hashCode", "toString", "Chapter", "app_debug"})
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b#\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001:\u00013Bm\u0012\u0016\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u0006\u0010\f\u001a\u00020\n\u0012\u0006\u0010\r\u001a\u00020\n\u0012\u0006\u0010\u000e\u001a\u00020\n\u0012\u0006\u0010\u000f\u001a\u00020\n\u0012\u0006\u0010\u0010\u001a\u00020\u0007\u0012\u0006\u0010\u0011\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0012J\u0019\u0010!\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005H\u00c6\u0003J\t\u0010\"\u001a\u00020\u0007H\u00c6\u0003J\t\u0010#\u001a\u00020\u0007H\u00c6\u0003J\t\u0010$\u001a\u00020\u0007H\u00c6\u0003J\t\u0010%\u001a\u00020\u0007H\u00c6\u0003J\t\u0010&\u001a\u00020\nH\u00c6\u0003J\t\u0010\'\u001a\u00020\nH\u00c6\u0003J\t\u0010(\u001a\u00020\nH\u00c6\u0003J\t\u0010)\u001a\u00020\nH\u00c6\u0003J\t\u0010*\u001a\u00020\nH\u00c6\u0003J\t\u0010+\u001a\u00020\nH\u00c6\u0003J\u0087\u0001\u0010,\u001a\u00020\u00002\u0018\b\u0002\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\n2\b\b\u0002\u0010\f\u001a\u00020\n2\b\b\u0002\u0010\r\u001a\u00020\n2\b\b\u0002\u0010\u000e\u001a\u00020\n2\b\b\u0002\u0010\u000f\u001a\u00020\n2\b\b\u0002\u0010\u0010\u001a\u00020\u00072\b\b\u0002\u0010\u0011\u001a\u00020\u0007H\u00c6\u0001J\u0013\u0010-\u001a\u00020.2\b\u0010/\u001a\u0004\u0018\u000100H\u00d6\u0003J\t\u00101\u001a\u00020\nH\u00d6\u0001J\t\u00102\u001a\u00020\u0007H\u00d6\u0001R!\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\b\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0016R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\r\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0019R\u0011\u0010\u000e\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0019R\u0011\u0010\u000f\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0019R\u0011\u0010\u0010\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0016R\u0011\u0010\f\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0019R\u0011\u0010\u000b\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0019R\u0011\u0010\u0011\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b \u0010\u0016\u00a8\u00064"}, d2 = {"Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data;", "Ljava/io/Serializable;", "chapter", "Ljava/util/ArrayList;", "Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data$Chapter;", "Lkotlin/collections/ArrayList;", "created_at", "", "description", "id", "", "total_topics", "total_completed", "paid", "status", "teacher_id", "title", "updated_at", "(Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;IIIIIILjava/lang/String;Ljava/lang/String;)V", "getChapter", "()Ljava/util/ArrayList;", "getCreated_at", "()Ljava/lang/String;", "getDescription", "getId", "()I", "getPaid", "getStatus", "getTeacher_id", "getTitle", "getTotal_completed", "getTotal_topics", "getUpdated_at", "component1", "component10", "component11", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "", "hashCode", "toString", "Chapter", "app_debug"})
     public static final class Data implements java.io.Serializable {
         @org.jetbrains.annotations.NotNull()
         private final java.util.ArrayList<com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data.Chapter> chapter = null;
@@ -91,6 +91,8 @@ public final class QbanksubjectResponse implements java.io.Serializable {
         @org.jetbrains.annotations.NotNull()
         private final java.lang.String description = null;
         private final int id = 0;
+        private final int total_topics = 0;
+        private final int total_completed = 0;
         private final int paid = 0;
         private final int status = 0;
         private final int teacher_id = 0;
@@ -115,6 +117,14 @@ public final class QbanksubjectResponse implements java.io.Serializable {
         }
         
         public final int getId() {
+            return 0;
+        }
+        
+        public final int getTotal_topics() {
+            return 0;
+        }
+        
+        public final int getTotal_completed() {
             return 0;
         }
         
@@ -143,7 +153,7 @@ public final class QbanksubjectResponse implements java.io.Serializable {
         public Data(@org.jetbrains.annotations.NotNull()
         java.util.ArrayList<com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data.Chapter> chapter, @org.jetbrains.annotations.NotNull()
         java.lang.String created_at, @org.jetbrains.annotations.NotNull()
-        java.lang.String description, int id, int paid, int status, int teacher_id, @org.jetbrains.annotations.NotNull()
+        java.lang.String description, int id, int total_topics, int total_completed, int paid, int status, int teacher_id, @org.jetbrains.annotations.NotNull()
         java.lang.String title, @org.jetbrains.annotations.NotNull()
         java.lang.String updated_at) {
             super();
@@ -180,13 +190,21 @@ public final class QbanksubjectResponse implements java.io.Serializable {
             return 0;
         }
         
+        public final int component8() {
+            return 0;
+        }
+        
+        public final int component9() {
+            return 0;
+        }
+        
         @org.jetbrains.annotations.NotNull()
-        public final java.lang.String component8() {
+        public final java.lang.String component10() {
             return null;
         }
         
         @org.jetbrains.annotations.NotNull()
-        public final java.lang.String component9() {
+        public final java.lang.String component11() {
             return null;
         }
         
@@ -194,7 +212,7 @@ public final class QbanksubjectResponse implements java.io.Serializable {
         public final com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data copy(@org.jetbrains.annotations.NotNull()
         java.util.ArrayList<com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data.Chapter> chapter, @org.jetbrains.annotations.NotNull()
         java.lang.String created_at, @org.jetbrains.annotations.NotNull()
-        java.lang.String description, int id, int paid, int status, int teacher_id, @org.jetbrains.annotations.NotNull()
+        java.lang.String description, int id, int total_topics, int total_completed, int paid, int status, int teacher_id, @org.jetbrains.annotations.NotNull()
         java.lang.String title, @org.jetbrains.annotations.NotNull()
         java.lang.String updated_at) {
             return null;
@@ -366,15 +384,14 @@ public final class QbanksubjectResponse implements java.io.Serializable {
                 return false;
             }
             
-            @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u001a\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001:\u0001,BS\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u000fJ\t\u0010\u001c\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u001d\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001e\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001f\u001a\u00020\u0005H\u00c6\u0003J\t\u0010 \u001a\u00020\u0003H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\u000f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\f0\u000bH\u00c6\u0003J\t\u0010#\u001a\u00020\u0003H\u00c6\u0003J\t\u0010$\u001a\u00020\u0005H\u00c6\u0003Ji\u0010%\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00052\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b2\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u0005H\u00c6\u0001J\u0013\u0010&\u001a\u00020\'2\b\u0010(\u001a\u0004\u0018\u00010)H\u00d6\u0003J\t\u0010*\u001a\u00020\u0003H\u00d6\u0001J\t\u0010+\u001a\u00020\u0005H\u00d6\u0001R\u0011\u0010\u0007\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0011R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0011R\u0011\u0010\b\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0013R\u0011\u0010\t\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0011R\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\r\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0013R\u0011\u0010\u000e\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0011\u00a8\u0006-"}, d2 = {"Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data$Chapter$Topic;", "Ljava/io/Serializable;", "course_id", "", "created_at", "", "description", "count", "id", "name", "question", "", "Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data$Chapter$Topic$Question;", "subject_id", "updated_at", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/List;ILjava/lang/String;)V", "getCount", "()Ljava/lang/String;", "getCourse_id", "()I", "getCreated_at", "getDescription", "getId", "getName", "getQuestion", "()Ljava/util/List;", "getSubject_id", "getUpdated_at", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "", "hashCode", "toString", "Question", "app_debug"})
+            @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u001a\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001:\u0001,BS\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u000fJ\t\u0010\u001c\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u001d\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001e\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001f\u001a\u00020\u0003H\u00c6\u0003J\t\u0010 \u001a\u00020\u0003H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\u000f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\f0\u000bH\u00c6\u0003J\t\u0010#\u001a\u00020\u0003H\u00c6\u0003J\t\u0010$\u001a\u00020\u0005H\u00c6\u0003Ji\u0010%\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00052\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b2\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u0005H\u00c6\u0001J\u0013\u0010&\u001a\u00020\'2\b\u0010(\u001a\u0004\u0018\u00010)H\u00d6\u0003J\t\u0010*\u001a\u00020\u0003H\u00d6\u0001J\t\u0010+\u001a\u00020\u0005H\u00d6\u0001R\u0011\u0010\u0007\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0011R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0011\u0010\b\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0011R\u0011\u0010\t\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0014R\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\r\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0011R\u0011\u0010\u000e\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0014\u00a8\u0006-"}, d2 = {"Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data$Chapter$Topic;", "Ljava/io/Serializable;", "course_id", "", "created_at", "", "description", "count", "id", "name", "question", "", "Lcom/acexams/aceexam/activity/modal/QbanksubjectResponse$Data$Chapter$Topic$Question;", "subject_id", "updated_at", "(ILjava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/util/List;ILjava/lang/String;)V", "getCount", "()I", "getCourse_id", "getCreated_at", "()Ljava/lang/String;", "getDescription", "getId", "getName", "getQuestion", "()Ljava/util/List;", "getSubject_id", "getUpdated_at", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "", "hashCode", "toString", "Question", "app_debug"})
             public static final class Topic implements java.io.Serializable {
                 private final int course_id = 0;
                 @org.jetbrains.annotations.NotNull()
                 private final java.lang.String created_at = null;
                 @org.jetbrains.annotations.NotNull()
                 private final java.lang.String description = null;
-                @org.jetbrains.annotations.NotNull()
-                private final java.lang.String count = null;
+                private final int count = 0;
                 private final int id = 0;
                 @org.jetbrains.annotations.NotNull()
                 private final java.lang.String name = null;
@@ -398,9 +415,8 @@ public final class QbanksubjectResponse implements java.io.Serializable {
                     return null;
                 }
                 
-                @org.jetbrains.annotations.NotNull()
-                public final java.lang.String getCount() {
-                    return null;
+                public final int getCount() {
+                    return 0;
                 }
                 
                 public final int getId() {
@@ -428,8 +444,7 @@ public final class QbanksubjectResponse implements java.io.Serializable {
                 
                 public Topic(int course_id, @org.jetbrains.annotations.NotNull()
                 java.lang.String created_at, @org.jetbrains.annotations.NotNull()
-                java.lang.String description, @org.jetbrains.annotations.NotNull()
-                java.lang.String count, int id, @org.jetbrains.annotations.NotNull()
+                java.lang.String description, int count, int id, @org.jetbrains.annotations.NotNull()
                 java.lang.String name, @org.jetbrains.annotations.NotNull()
                 java.util.List<com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data.Chapter.Topic.Question> question, int subject_id, @org.jetbrains.annotations.NotNull()
                 java.lang.String updated_at) {
@@ -450,9 +465,8 @@ public final class QbanksubjectResponse implements java.io.Serializable {
                     return null;
                 }
                 
-                @org.jetbrains.annotations.NotNull()
-                public final java.lang.String component4() {
-                    return null;
+                public final int component4() {
+                    return 0;
                 }
                 
                 public final int component5() {
@@ -481,8 +495,7 @@ public final class QbanksubjectResponse implements java.io.Serializable {
                 @org.jetbrains.annotations.NotNull()
                 public final com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data.Chapter.Topic copy(int course_id, @org.jetbrains.annotations.NotNull()
                 java.lang.String created_at, @org.jetbrains.annotations.NotNull()
-                java.lang.String description, @org.jetbrains.annotations.NotNull()
-                java.lang.String count, int id, @org.jetbrains.annotations.NotNull()
+                java.lang.String description, int count, int id, @org.jetbrains.annotations.NotNull()
                 java.lang.String name, @org.jetbrains.annotations.NotNull()
                 java.util.List<com.acexams.aceexam.activity.modal.QbanksubjectResponse.Data.Chapter.Topic.Question> question, int subject_id, @org.jetbrains.annotations.NotNull()
                 java.lang.String updated_at) {

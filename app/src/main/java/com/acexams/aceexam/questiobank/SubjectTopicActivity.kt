@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.acexams.aceexam.R
@@ -29,6 +30,7 @@ class SubjectTopicActivity : AppCompatActivity(),SubjectTopicAdpater.SubjectTopi
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_subject_topic)
         topic_id=intent.getStringExtra("topic_id").toString()
+        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
 
         token=shareprefrences.getStringPreference(this, "ACCESS_TOKEN").toString()
         subjectTopicList()

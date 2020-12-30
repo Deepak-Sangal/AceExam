@@ -38,6 +38,7 @@
             android:layout_toRightOf="@+id/backbutton" />
 
         <ImageView
+            android:visibility="gone"
             android:id="@+id/settingbtn"
             android:layout_width="@dimen/dp20"
             android:layout_height="@dimen/dp20"
@@ -52,8 +53,9 @@
 
 
     <TextView
+        android:id="@+id/vbdfdsx"
         android:fontFamily="@font/font"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bones , Joints and Cartilags and something else"
@@ -63,8 +65,9 @@
         android:layout_margin="@dimen/dp10"/>
 
     <TextView
+        android:id="@+id/dvsbdsfdf"
         android:fontFamily="@font/font"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="General Anatomy - question Bank"

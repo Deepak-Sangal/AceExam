@@ -354,6 +354,14 @@
                         android:text="Recommended"
                         android:textColor="#615F5F"
                         android:textSize="@dimen/sp15" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Question Of The Day"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="#615F5F"
+                        android:textSize="@dimen/sp15" />
 
                     <TextView
                         android:id="@+id/quickquestion"
@@ -368,10 +376,11 @@
 
                     <LinearLayout
                         android:id="@+id/mcqoftheday"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+
                         android:layout_marginRight="20dp"
                         android:background="@drawable/greyborder"
                         android:orientation="vertical">
@@ -456,6 +465,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:layout_marginBottom="@dimen/_10sdp"
                             android:id="@+id/linear4"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
@@ -479,6 +489,7 @@
                         <TextView
                             android:visibility="gone"
                             android:id="@+id/expalination"
+                            android:layout_marginBottom="@dimen/_10sdp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/dp15"
@@ -504,7 +515,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp15"
                         android:paddingLeft="@dimen/dp15"
-                        android:text="Exam of the day"
+                        android:text="Suggested Test For the You"
                         android:textColor="@color/blacktext"
                         android:textSize="@dimen/dp15" />
 
@@ -526,7 +537,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp15"
                         android:paddingLeft="@dimen/dp15"
-                        android:text="Class of the day"
+                        android:text="New Releases"
                         android:textColor="@color/blacktext"
                         android:textSize="@dimen/dp15" />
 

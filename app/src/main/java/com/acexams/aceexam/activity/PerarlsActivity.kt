@@ -23,6 +23,7 @@ class PerarlsActivity : AppCompatActivity() {
     var descrbtion:String=""
     var userId:String=""
     var boookmark:String=""
+    var title:String=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,9 +35,10 @@ class PerarlsActivity : AppCompatActivity() {
         descrbtion= intent.getStringExtra("perldescrbion").toString()
         id= intent.getStringExtra("pearlid").toString()
         boookmark= intent.getStringExtra("bookmark").toString()
+        title= intent.getStringExtra("pearltitle").toString()
         userId=shareprefrences.getStringPreference(this, "USER_ID").toString()
         perltag.text="Pearl #" +id
-
+        bhgbjdf.text=title
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             dehfvhn.setText(Html.fromHtml(descrbtion, Html.FROM_HTML_MODE_COMPACT));
         } else {

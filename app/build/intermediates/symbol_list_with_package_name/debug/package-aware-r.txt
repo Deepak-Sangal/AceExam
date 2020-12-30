@@ -2444,6 +2444,7 @@ drawable common_google_signin_btn_text_light_normal_background
 drawable commoncircle
 drawable commoncolorfillwithoutcorner
 drawable commonfilled
+drawable completegreen
 drawable contact_us
 drawable corner30pink
 drawable corner_image
@@ -2734,6 +2735,7 @@ drawable greenfilled
 drawable grey_corners_0_radious
 drawable greyborder
 drawable greycorners
+drawable greycorners_4dp
 drawable greyroundcorners
 drawable hd_picture
 drawable help
@@ -3003,6 +3005,7 @@ id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
+id bhgbjdf
 id blocking
 id bnt_confirm
 id bnt_next_test
@@ -3066,6 +3069,8 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id ciorrrr
+id ckiiiiiiii
 id cl_hide_assist
 id cl_show_assist
 id classesrecycle
@@ -3155,6 +3160,8 @@ id drawer
 id drawerContainer
 id drawer_image
 id dropdown_menu
+id dsbvhwfhdvsghcdsfxc
+id dvsbdsfdf
 id easeIn
 id easeInOut
 id easeOut
@@ -3251,6 +3258,7 @@ id grouping
 id groups
 id hardware
 id hearder
+id heeeeeeeee
 id hideable
 id home
 id homeAsUp
@@ -3623,6 +3631,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id texttitle
 id third_year_selection
 id thirdkey
 id thirdtest
@@ -3642,6 +3651,7 @@ id top
 id topPanel
 id topiccount
 id toplisting
+id totalllllll
 id totalprice
 id totalscore
 id totalsquestion
@@ -3743,6 +3753,7 @@ id uranswer
 id useLogo
 id user_image
 id username
+id vbdfdsx
 id videoclass
 id videocompletion
 id videodescribe

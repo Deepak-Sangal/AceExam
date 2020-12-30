@@ -47,9 +47,9 @@ class DashBoardActivity : AppCompatActivity(), View.OnClickListener,AdapterView.
 
     val titles = arrayOf(
         "Home",
-        "Know More",
-        "Buy Now",
-        "Acexam Notes",
+        "Explore Acexam",
+        "Enroll Now",
+        "Study Metarial",
         "Acexam Faculty",
         "FAQ",
         "Share",
@@ -230,7 +230,6 @@ class DashBoardActivity : AppCompatActivity(), View.OnClickListener,AdapterView.
             applicationContext,
             R.layout.drawer_layout, rowItems
         )
-
         drawer.setAdapter(listItemRowAdapter)
 
 
@@ -286,8 +285,7 @@ class DashBoardActivity : AppCompatActivity(), View.OnClickListener,AdapterView.
                 intent.putExtra(Intent.EXTRA_TEXT,"Hey Check out this Great app:")
                 intent.type="text/plain"
                 startActivity(Intent.createChooser(intent,"Share To:"))
-                /* session!!.clearAllPreferences()
-                 finish()*/
+
             }
             7->{
                 draweLayout.closeDrawer(drawerContainer)

@@ -20,6 +20,7 @@ class PearlsDetalsAdapter(var context: Context, val list: List<AllperalResponse.
                 intent.putExtra("perldescrbion",list[adapterPosition].description)
                 intent.putExtra("bookmark",list[adapterPosition].bookmark.toString())
                 intent.putExtra("pearlid",list[adapterPosition].id.toString())
+                intent.putExtra("pearltitle",list[adapterPosition].title.toString())
                 context.startActivity(intent)
             }
         }

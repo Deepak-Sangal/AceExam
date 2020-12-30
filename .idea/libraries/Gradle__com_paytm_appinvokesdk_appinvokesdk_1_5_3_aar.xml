@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.paytm.appinvokesdk:appinvokesdk:1.5.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f5d1805f018fa8a3cbd5349c3d7d92f/jetified-appinvokesdk-1.5.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f5d1805f018fa8a3cbd5349c3d7d92f/jetified-appinvokesdk-1.5.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f5d1805f018fa8a3cbd5349c3d7d92f/jetified-appinvokesdk-1.5.3/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/0f5d1805f018fa8a3cbd5349c3d7d92f/jetified-appinvokesdk-1.5.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/0f5d1805f018fa8a3cbd5349c3d7d92f/jetified-appinvokesdk-1.5.3/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/0f5d1805f018fa8a3cbd5349c3d7d92f/jetified-appinvokesdk-1.5.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

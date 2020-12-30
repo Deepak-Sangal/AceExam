@@ -12,322 +12,335 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <LinearLayout
-        android:visibility="visible"
-        android:id="@+id/questionb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:fontFamily="@font/nunitofont"
-                    android:visibility="gone"
-                    android:id="@+id/txt_question_title"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="9"
-                    android:text="SIMPLE EQUATIONS OF A MOTORS"
-                    android:textColor="@color/common"
-                    android:textSize="@dimen/_20sdp">
-
-                </TextView>
-
-                <ImageView
-                    android:id="@+id/img_go_back"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/cross_circle"
-                    android:visibility="gone">
-
-
-                </ImageView>
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_marginRight="@dimen/dp15"
-                    android:visibility="gone"
-                    android:id="@+id/img_unbook"
-                    android:layout_toLeftOf="@+id/img_book"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/unbookmark" />
-
-                <ImageView
-                    android:visibility="gone"
-                    android:id="@+id/img_book"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="@dimen/dp15"
-                    android:src="@drawable/bookmarkcommon"
-                    />
-            </LinearLayout>
-        </LinearLayout>
-        <RelativeLayout
-            android:layout_marginTop="@dimen/dp20"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:fontFamily="@font/font"
-                android:id="@+id/questioncount"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:text="1"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:padding="1dp"
-                android:textSize="@dimen/_16sdp"
-                android:gravity="center"
-                android:background="@drawable/corner30pink"
-                android:textColor="@color/common"/>
-        <TextView
-            android:layout_toEndOf="@+id/questioncount"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:fontFamily="@font/font"
-            android:layout_toStartOf="@+id/bookmarkwith"
-            android:id="@+id/txt_question"
-            android:layout_marginBottom="@dimen/_5sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Question"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="22sp">
 
-        </TextView>
-            <ImageView
-                android:layout_marginTop="@dimen/_5sdp"
-                android:id="@+id/bookmarkwith"
-               android:layout_alignParentEnd="true"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentTop="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/bookmarkcommon"
-                android:layout_gravity="center"/>
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:orientation="horizontal">
-            <TextView
-                android:fontFamily="@font/font"
-                android:id="@+id/firstkey"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:text="A"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:padding="1dp"
-                android:textSize="@dimen/_16sdp"
-                android:gravity="center"
-                android:background="@drawable/corner30pink"
-                android:textColor="@color/common"/>
-
-        <TextView
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:fontFamily="@font/font"
-            android:id="@+id/txt_ans_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Arties always carry oxygenated blood throughtout the body"
-            android:textSize="@dimen/sp17" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:orientation="horizontal">
-            <TextView
-                android:fontFamily="@font/font"
-                android:id="@+id/secondkey"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:text="B"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:padding="1dp"
-                android:textSize="@dimen/_16sdp"
-                android:gravity="center"
-                android:background="@drawable/corner30pink"
-                android:textColor="@color/common"/>
-
-            <TextView
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:fontFamily="@font/font"
-                android:id="@+id/txt_answaer_two"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Arties always carry oxygenated blood throughtout the body"
-                android:textSize="@dimen/sp17" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:orientation="horizontal">
-            <TextView
-                android:fontFamily="@font/font"
-                android:id="@+id/thirdkey"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:text="C"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:padding="1dp"
-                android:textSize="@dimen/_16sdp"
-                android:gravity="center"
-                android:background="@drawable/corner30pink"
-                android:textColor="@color/common"/>
-
-            <TextView
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:fontFamily="@font/font"
-                android:id="@+id/txt_answer_three"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Arties always carry oxygenated blood throughtout the body"
-                android:textSize="@dimen/sp17" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:orientation="horizontal">
-            <TextView
-                android:fontFamily="@font/font"
-                android:id="@+id/fourkey"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:text="D"
-                android:padding="1dp"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textSize="@dimen/_16sdp"
-                android:gravity="center"
-                android:background="@drawable/corner30pink"
-                android:textColor="@color/common"/>
-
-            <TextView
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:fontFamily="@font/font"
-                android:id="@+id/txt_answer_four"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Arties always carry oxygenated blood throughtout the body"
-                android:textSize="@dimen/sp17" />
-        </LinearLayout>
-
-
-    </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
-                android:visibility="gone"
-                android:id="@+id/explanication"
-                android:layout_marginBottom="@dimen/_15sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
-                    android:fontFamily="@font/font"
-                    android:layout_marginTop="5sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Explanication"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_15sdp"
-                    />
-                <TextView
-                    android:fontFamily="@font/font"
-                    android:id="@+id/explanition"
-                    android:layout_marginTop="@dimen/_10sdp"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/number_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Herniation of the nidgut during embryogenesis persists until"
-                    android:textSize="@dimen/_15sdp"
-                    />
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/questionb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txt_question_title"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:fontFamily="@font/nunitofont"
+                                    android:text="SIMPLE EQUATIONS OF A MOTORS"
+                                    android:textColor="@color/common"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:visibility="gone">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:id="@+id/img_go_back"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/cross_circle"
+                                    android:visibility="gone">
 
 
+                                </ImageView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_unbook"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="@dimen/dp15"
+                                    android:layout_toLeftOf="@+id/img_book"
+                                    android:src="@drawable/unbookmark"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/img_book"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="@dimen/dp15"
+                                    android:src="@drawable/bookmarkcommon"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp20">
+
+                            <TextView
+                                android:id="@+id/questioncount"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/corner30pink"
+                                android:fontFamily="@font/font"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:text="1"
+                                android:textColor="@color/common"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_question"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_toStartOf="@+id/bookmarkwith"
+                                android:layout_toEndOf="@+id/questioncount"
+                                android:fontFamily="@font/font"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="22sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/bookmarkwith"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:src="@drawable/bookmarkcommon" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/firstkey"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/corner30pink"
+                                android:fontFamily="@font/font"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:text="A"
+                                android:textColor="@color/common"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_ans_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:fontFamily="@font/font"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="@dimen/sp17" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/secondkey"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/corner30pink"
+                                android:fontFamily="@font/font"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:text="B"
+                                android:textColor="@color/common"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_answaer_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:fontFamily="@font/font"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="@dimen/sp17" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/thirdkey"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/corner30pink"
+                                android:fontFamily="@font/font"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:text="C"
+                                android:textColor="@color/common"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_answer_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:fontFamily="@font/font"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="@dimen/sp17" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fourkey"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/corner30pink"
+                                android:fontFamily="@font/font"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:text="D"
+                                android:textColor="@color/common"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_answer_four"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:fontFamily="@font/font"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="@dimen/sp17" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/explanication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/font"
+                            android:text="Explanation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/explanition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/font"
+                            android:text="Herniation of the nidgut during embryogenesis persists until"
+                            android:textSize="@dimen/_15sdp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottomwar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="end"
+                        android:background="@drawable/filledcommon"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_40sdp"
+                        android:paddingVertical="@dimen/_8sdp"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
             </LinearLayout>
+        </ScrollView>
     </LinearLayout>
-    <RelativeLayout
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:visibility="gone"
-        android:id="@+id/bottomwar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/button"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="@dimen/_8sdp"
-            android:background="@drawable/filledcommon"
-            android:text="Next"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_20sdp"
-            android:paddingHorizontal="@dimen/_40sdp"
-            android:gravity="center"
-            android:layout_gravity="end"/>
-
-    </RelativeLayout>
-    </LinearLayout>
-</ScrollView>
-    </LinearLayout>
-
-
-
-
-
-
-
 
 
 </RelativeLayout>

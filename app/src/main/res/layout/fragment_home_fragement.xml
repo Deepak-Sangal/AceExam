@@ -346,19 +346,22 @@
                     android:backgroundTint="@color/whitetext"
                     android:orientation="vertical">
 
+<!--
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:padding="@dimen/sp15"
-                        android:text="Recommended"
+                        android:text="Recommended "
                         android:textColor="#615F5F"
                         android:textSize="@dimen/sp15" />
+-->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="Question Of The Day"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Recommended question Of The Day"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:textColor="#615F5F"
                         android:textSize="@dimen/sp15" />
@@ -515,7 +518,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp15"
                         android:paddingLeft="@dimen/dp15"
-                        android:text="Suggested Test For the You"
+                        android:text="Suggested Test For You"
                         android:textColor="@color/blacktext"
                         android:textSize="@dimen/dp15" />
 

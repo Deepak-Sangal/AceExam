@@ -94,6 +94,7 @@
         android:layout_margin="@dimen/dp10"/>
 
     <TextView
+        android:visibility="gone"
         android:fontFamily="@font/font"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

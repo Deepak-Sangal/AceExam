@@ -108,7 +108,7 @@ class DashBoardActivity : AppCompatActivity(), View.OnClickListener,AdapterView.
 
                 R.id.nav_class -> {
                     fragment="hom"
-                    dashboardtitle.text="Classess"
+                    dashboardtitle.text="Classes"
                     searchdatadd.setImageResource(R.drawable.ic_baseline_search_24)
                     searchdatadd.visibility=View.VISIBLE
                     switchfragment(ClassesFragement(),true)

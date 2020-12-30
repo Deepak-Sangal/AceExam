@@ -1,6 +1,5 @@
 package com.acexams.aceexam.questiobank
 
-import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
@@ -15,10 +14,12 @@ import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.acexams.aceexam.R
 import com.acexams.aceexam.activity.DashBoardActivity
 import com.acexams.aceexam.activity.QuestionbankreviewActivity
-import com.acexams.aceexam.activity.ReviewActivity
+import com.acexams.aceexam.questiobank.adpater.QuestionNumberAdapter
+import com.acexams.aceexam.questiobank.modal.QuestionNumberModal
 import com.acexams.aceexam.questiobank.modal.QuestiontestResponse
 import com.acexams.aceexam.retrofit.ApiInterface
 import com.talkingtb.talkingtb.remote.ApiClient
@@ -29,10 +30,10 @@ import kotlinx.android.synthetic.main.activity_question_test.txt_answaer_two
 import kotlinx.android.synthetic.main.activity_question_test.txt_answer_four
 import kotlinx.android.synthetic.main.activity_question_test.txt_answer_three
 import kotlinx.android.synthetic.main.activity_question_test.txt_question
-import kotlinx.android.synthetic.main.fragment_home_fragement.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody
 import okhttp3.ResponseBody
+import okhttp3.internal.notifyAll
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
@@ -51,8 +52,10 @@ class QuestionTestActivity : AppCompatActivity(), View.OnClickListener {
     var userId:String=""
     var i:Int =0
     var count:Int=0
+    var totalNumber:Int=0
     lateinit var dialog:Dialog
     var id:String=""
+    var number:MutableList<QuestionNumberModal> = ArrayList()
     var sendquestion:ArrayList<String> =ArrayList()
     var sendanswer:ArrayList<String> =ArrayList()
     var sendstatus:ArrayList<String> = ArrayList()
@@ -64,6 +67,10 @@ class QuestionTestActivity : AppCompatActivity(), View.OnClickListener {
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         id= shareprefrences.getStringPreference(this,"topicid")!!
         userId=shareprefrences.getStringPreference(this, "USER_ID").toString()
+
+        number_recycler.layoutManager = LinearLayoutManager(
+            this, LinearLayoutManager.HORIZONTAL, false
+        )
         questionbank()
         init()
 
@@ -94,6 +101,15 @@ class QuestionTestActivity : AppCompatActivity(), View.OnClickListener {
                 if (response.code() == 200) {
                     if(response.body()!!.status==200) {
                         if(response!!.body()!!.data.size>0) {
+                            totalNumber= response.body()!!.data.size
+                            for(n in 1..totalNumber){
+                                var list=QuestionNumberModal(n,0)
+                                number.add(list)
+                            }
+
+                            number_recycler.adapter = QuestionNumberAdapter(
+                                this@QuestionTestActivity,number
+                            )
                             questionb.visibility = View.VISIBLE
                             qbanklis =
                                 response.body()!!.data as ArrayList<QuestiontestResponse.Data>
@@ -292,10 +308,15 @@ when(v!!.id){
         explanication.visibility=View.VISIBLE
         bottomwar.visibility=View.VISIBLE
         if(qbanklis[i].answers[answerkey].is_correct==1){
+            number[i].status = 1
             sendstatus.add("1")
         }else{
+            number[i].status = 2
             sendstatus.add("0")
         }
+        number_recycler.adapter = QuestionNumberAdapter(
+            this@QuestionTestActivity,number
+        )
         if(qbanklis[i].bookmark==1){
             bookmarkwith.setImageDrawable(resources.getDrawable(R.drawable.unbookmark))
         }else{
